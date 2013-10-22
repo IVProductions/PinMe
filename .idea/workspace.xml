@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/login.html" afterPath="$PROJECT_DIR$/app/partials/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/newuser.html" afterPath="$PROJECT_DIR$/app/partials/newuser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382410055255" ignored="false" />
-    <file path="/config.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382411114672" ignored="false" />
+    <file path="/config.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382411458339" ignored="false" />
     <file path="/login.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382406779175" ignored="false" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382403339035" ignored="false" />
     <file path="/app.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382399499598" ignored="false" />
@@ -127,7 +121,7 @@
       <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="24" selection-start="357" selection-end="357" vertical-scroll-proportion="0.25384617">
+            <state line="92" column="38" selection-start="6651" selection-end="6651" vertical-scroll-proportion="0.78365386">
               <folding />
             </state>
           </provider>
@@ -582,7 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="357" selection-end="357" vertical-scroll-proportion="0.25384617">
+        <state line="92" column="38" selection-start="6651" selection-end="6651" vertical-scroll-proportion="0.78365386">
           <folding />
         </state>
       </provider>

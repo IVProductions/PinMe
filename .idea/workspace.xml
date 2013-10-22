@@ -3,18 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/login.html" afterPath="$PROJECT_DIR$/app/partials/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382400576063" ignored="false" />
     <file path="/config.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382399255574" ignored="false" />
-    <file path="/login.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382400826946" ignored="false" />
+    <file path="/login.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382401568084" ignored="false" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382400654203" ignored="false" />
     <file path="/app.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382399499598" ignored="false" />
     <file path="/loginCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382399519222" ignored="false" />
-    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382401009770" ignored="false" />
+    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1382401390622" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+            <state line="20" column="16" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +81,7 @@
       <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="315" selection-end="315" vertical-scroll-proportion="0.27355623">
+            <state line="6" column="44" selection-start="184" selection-end="184" vertical-scroll-proportion="0.13677812">
               <folding />
             </state>
           </provider>
@@ -119,8 +118,8 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
+        <option value="$PROJECT_DIR$/app/partials/login.html" />
       </list>
     </option>
   </component>
@@ -450,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/css/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="61" selection-start="104" selection-end="104" vertical-scroll-proportion="-3.0">
@@ -464,9 +456,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="302" selection-end="302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="315" selection-end="315" vertical-scroll-proportion="0.27355623">
+        <state line="6" column="44" selection-start="184" selection-end="184" vertical-scroll-proportion="0.13677812">
           <folding />
         </state>
       </provider>

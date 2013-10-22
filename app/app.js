@@ -1,8 +1,8 @@
  <!-- Declare a module -->
-var ShareThis = angular.module('ShareThis', []);
+var PinMe = angular.module('PinMe', []);
 
 <!--Routing-->
-ShareThis.config(function ($routeProvider){
+PinMe.config(function ($routeProvider){
     $routeProvider.when("/", {
         templateUrl:"app/partials/login.html",
         controller:"loginCtrl"

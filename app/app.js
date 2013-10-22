@@ -1,5 +1,5 @@
  <!-- Declare a module -->
-var PinMe = angular.module('PinMe', []);
+var PinMe = angular.module('PinMe', ['ngResource']);
 
 <!--Routing-->
 PinMe.config(function ($routeProvider){

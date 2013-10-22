@@ -1,3 +1,3 @@
-function loginCtrl($scope){
+function newUserCtrl($scope){
 
 }

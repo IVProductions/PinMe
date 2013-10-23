@@ -6,10 +6,11 @@
         id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-    <name>Jims Woods</name>
+    <name>PinMe</name>
 
     <description>
-        Best. Game. Ever.
+        Mobile Computing
+        Mobile Computing
     </description>
 
     <author href="http://phonegap.com" email="support@phonegap.com">
@@ -88,6 +89,7 @@
 
         Otherwise, you can specify specific domains:
     -->
+    <access origin="*" />
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
     <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/

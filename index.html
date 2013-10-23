@@ -20,23 +20,28 @@
     <script type="text/javascript" src="Scripts/jquery-ui-1.10.3.min.js"></script>
     <script type="text/javascript" src="Scripts/localStorageModule.js"></script>
 
+    <!-- online scripts -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK4IJuQJKx3mb8saWPzf99CPjGKWsbfrc&sensor=true"></script>
+
     <!--Module-->
     <script type="text/javascript" src="app/app.js"></script>
 
     <!--Controllers-->
     <script type="text/javascript" src="app/controllers/loginCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/newUserCtrl.js"></script>
+    <script type="text/javascript" src="app/controllers/mapCtrl.js"></script>
 
     <!--Services-->
 
     <!--Filters-->
 
     <!--Directives-->
-
+    <script type="text/javascript" src="app/directives/mapDirective.js"></script>
 
 </head>
 
 <body>
-    <div class="container" ng-view="">
+    <div ng-view="">
         <!-- Container for the Partials views -->
     </div>
 </body>

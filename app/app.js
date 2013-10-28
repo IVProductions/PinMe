@@ -1,17 +1,15 @@
  <!-- Declare a module -->
-var PinMe = angular.module('PinMe', ['directives']);
+var PinMe = angular.module('PinMe', ['ngResource']);
 
 <!--Routing-->
 PinMe.config(function ($routeProvider){
     $routeProvider.when("/", {
         templateUrl:"app/partials/login.html",
         controller:"loginCtrl"
-    }).when("/newuser", {
+    })
+    $routeProvider.when("/newuser", {
         templateUrl:"app/partials/newuser.html",
-        controller:"newUserCtrl"
-    }).when("/login", {
-        templateUrl:"app/partials/map.html",
-        controller:"mapCtrl"
+        controller:"loginCtrl"
     }).otherwise({
         redirectTo:"/"
     })

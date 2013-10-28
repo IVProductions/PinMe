@@ -19,22 +19,23 @@ function mapCtrl($scope, $location){
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
 
+        console.log("lat: "+latitude +" long: "+longitude);
+
         var myOptions = {
             zoom: 15,
             center: new google.maps.LatLng(latitude,longitude),
             mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
+        };
 
+        console.log("new map");
         var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+        console.log("done");
     }
 
     // onError Callback receives a PositionError object
     function onError(error) {
         alert('code: ' + error.code + '\n message: ' + error.message + '\n');
     }
-
-
-
 
 /*    // configure marker
     var marker_options = {

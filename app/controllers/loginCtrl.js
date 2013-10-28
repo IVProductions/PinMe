@@ -2,7 +2,7 @@ function loginCtrl($scope, $location, $resource, $http){
 
     $scope.redirect = function(path) {
         $location.path(path);
-    }
+    };
 
     $scope.user = {
         name:"",

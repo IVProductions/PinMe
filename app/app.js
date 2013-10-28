@@ -7,9 +7,13 @@ PinMe.config(function ($routeProvider){
         templateUrl:"app/partials/login.html",
         controller:"loginCtrl"
     })
-    $routeProvider.when("/newuser", {
+    .when("/newuser", {
         templateUrl:"app/partials/newuser.html",
         controller:"loginCtrl"
+    })
+    .when("/login", {
+        templateUrl:"app/partials/map.html",
+        controller:"mapCtrl"
     }).otherwise({
         redirectTo:"/"
     })

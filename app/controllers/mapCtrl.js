@@ -1,7 +1,5 @@
 function mapCtrl($scope, $location){
 
-    var latitude = null;
-    var longitude = null;
 
     $("#map-canvas").css({'height': window.innerHeight});
 
@@ -16,8 +14,8 @@ function mapCtrl($scope, $location){
 
     // onSuccess Geolocation
     function onSuccess(position) {
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
 
         console.log("lat: "+latitude +" long: "+longitude);
 
@@ -28,7 +26,7 @@ function mapCtrl($scope, $location){
         };
 
         console.log("new map");
-        var map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+        var map = new google.maps.Map($("#map-canvas"), myOptions);
         console.log("done");
     }
 

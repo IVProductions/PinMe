@@ -4,12 +4,13 @@ angular.module('directives', []).directive('map', function() {
         replace: true,
         template: '<div></div>',
         link: function($scope, element, attrs) {
+           /*
             var center = new google.maps.LatLng(50.1, 14.4);
 
             var map_options = {
-                zoom: 14,
+                zoom: 15,
                 center: center,
-                mapTypeId: google.maps.MapTypeId.SATELLITE
+                mapTypeId: google.maps.MapTypeId.ROADMAP
             };
 
             // create map
@@ -31,6 +32,7 @@ angular.module('directives', []).directive('map', function() {
                 },100);
 
             });
+            */
         }
     };
 });

@@ -1,8 +1,62 @@
 function mapCtrl($scope, $location){
 
 
-    $("#map-canvas").css({'height': window.innerHeight});
+    $("#map").css({'height': window.innerHeight});
 
+    google.maps.visualRefresh = true;
+
+    angular.extend($scope, {
+
+        position: {
+            coords: {
+                latitude: 45,
+                longitude: -73
+            }
+        },
+
+        /** the initial center of the map */
+        centerProperty: {
+            latitude: 45,
+            longitude: -73
+        },
+
+        /** the initial zoom level of the map */
+        zoomProperty: 4,
+
+        /** list of markers to put in the map */
+        markersProperty: [ {
+            latitude: 45,
+            longitude: -74
+        }],
+
+        // These 2 properties will be set when clicking on the map
+        clickedLatitudeProperty: null,
+        clickedLongitudeProperty: null,
+
+        eventsProperty: {
+            click: function (mapModel, eventName, originalEventArgs) {
+                // 'this' is the directive's scope
+            }
+        }
+    });
+
+
+
+    /*
+
+    function initialize() {
+        console.log("iinit");
+        var mapOptions = {
+            center: new google.maps.LatLng(-34.397, 150.644),
+            zoom: 8,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+    }
+    google.maps.event.addDomListener(window, "load", initialize);
+
+    /*
     var onSuccess = function(position) {
 
         console.log("onsuccess");
@@ -27,7 +81,7 @@ function mapCtrl($scope, $location){
             'Heading: '           + position.coords.heading           + '\n' +
             'Speed: '             + position.coords.speed             + '\n' +
             'Timestamp: '         + position.timestamp                + '\n');
-            */
+
     };
 
 
@@ -73,4 +127,8 @@ function mapCtrl($scope, $location){
     }
 
 }
+
+
+
+
 

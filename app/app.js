@@ -1,5 +1,5 @@
  <!-- Declare a module -->
-var PinMe = angular.module('PinMe', ['ngResource']);
+var PinMe = angular.module('PinMe', ['ngResource','google-maps']);
 
 <!--Routing-->
 PinMe.config(function ($routeProvider){

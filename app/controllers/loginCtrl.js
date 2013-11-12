@@ -19,12 +19,13 @@ function loginCtrl($scope, $location, $resource, $http){
         $http.post("http://folk.ntnu.no/simoneik/PinMe/test_pin.php", data).
             success(function(data, status){
                 console.log("Success!");
-                alert("Status:"+status+" Data:"+data);
+                alert(data);
             }).
             error(function(data, status){
                 console.log("Error");
                 console.log(data || "No data returned." );
                 console.log(status);
+                alert(data);
             });
     };
 

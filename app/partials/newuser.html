@@ -9,17 +9,17 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12">
-            <input ng-model="user.password" type="text" placeholder="Enter Password"/>
+            <input ng-model="user.password" type="password" placeholder="Enter Password"/>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12">
-            <input ng-model="user.confirmPassword"type="text" placeholder="Re-enter Password"/>
+            <input ng-model="user.confirmPassword"type="password" placeholder="Re-enter Password"/>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-6 col-sm-6">
-            <button class="btn btn-success" ng-click="connect(user.name, user.password)">Create User</button>
+            <button class="btn btn-success" ng-click="create_user(user.name, user.password)">Create User</button>
             <button class="btn btn-danger" ng-click="redirect('/')">Back</button>
         </div>
         <div class="col-xs-6 col-sm-6">

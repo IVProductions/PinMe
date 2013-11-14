@@ -1,4 +1,4 @@
-function loginCtrl($scope, $location, $resource, $http){
+function loginCtrl($scope, $location, $resource, $http, stateService){
 
     $scope.redirect = function(path) {
         $location.path(path);
@@ -52,5 +52,25 @@ function loginCtrl($scope, $location, $resource, $http){
     }
 
 
+    function onSuccess (position) {
+        console.log("onsuccess");
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        alert('Latitude: '+ latitude + '\n' +'Longitude: ' + longitude + '\n');
+
+
+        stateService.functions.setLatitude(latitude);
+        stateService.functions.setLongitude(longitude);
+
+    }
+
+    function onError(error) {
+        console.log("hei"+error);
+        alert('code: '    + error.code    + '\n' +
+            'message: ' + error.message + '\n');
+    }
+
+    navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
 }

@@ -1,65 +1,10 @@
-PinMe.controller("mapCtrl", [ '$scope', function($scope) {
-    var latitude = 40.095;
-    var longitude = -3.823;
-
+function mapCtrl($scope, stateService){
     $("#map").css({'height': window.innerHeight});
-
-
-       /*
-    var onSuccess = function(position) {
-        console.log("onsuccess");
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
-        /*
-        var myOptions = {
-            zoom: 15,
-            center: new google.maps.LatLng(latitude, longitude),
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-
-        var map = new google.maps.Map($("#map-canvas"), myOptions);
-
-        console.log("done");
-
-         alert('Latitude: '    + position.coords.latitude          + '\n' +
-         'Longitude: '         + position.coords.longitude         + '\n' +
-         'Altitude: '          + position.coords.altitude          + '\n' +
-         'Accuracy: '          + position.coords.accuracy          + '\n' +
-         'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-         'Heading: '           + position.coords.heading           + '\n' +
-         'Speed: '             + position.coords.speed             + '\n' +
-         'Timestamp: '         + position.timestamp                + '\n');
-
-    };
-
-
-     function onError(error) {
-     console.log("hei"+error);
-     alert('code: '    + error.code    + '\n' +
-     'message: ' + error.message + '\n');
-     }
-      */
-
-   //  navigator.geolocation.getCurrentPosition(onSuccess, onError);
-
-    navigator.geolocation.getCurrentPosition(function (position) {
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
-
-        alert('Latitude: '              + position.coords.latitude          + '\n' +
-            'Longitude: '             + position.coords.longitude         + '\n' +
-            'Altitude: '              + position.coords.altitude          + '\n' +
-            'Accuracy: '              + position.coords.accuracy          + '\n' +
-            'Altitude Accuracy: '     + position.coords.altitudeAccuracy  + '\n' +
-            'Heading: '               + position.coords.heading           + '\n' +
-            'Speed: '                 + position.coords.speed             + '\n' +
-            'Timestamp: '             + position.timestamp                + '\n');
-    });
 
     angular.extend($scope, {
         center: {
-            lat: latitude,
-            lng: longitude,
+            lat: stateService.functions.getLatitude(),
+            lng: stateService.functions.getLongitude(),
             zoom: 4
         },
         defaults: {
@@ -67,10 +12,11 @@ PinMe.controller("mapCtrl", [ '$scope', function($scope) {
         }
     });
 
+
      $scope.redirect = function(path) {
          $location.path(path);
      }
-}]);
+}
 /*
 function mapCtrl($scope, $location){
 

@@ -8,7 +8,7 @@ function loginCtrl($scope, $location, $resource, $http){
         name:"",
         password:""
     }
-    $scope.connect = function(username, password) {
+    $scope.create_user = function(username, password) {
         console.log(username+", " + password);
 
         var data = {
@@ -28,6 +28,28 @@ function loginCtrl($scope, $location, $resource, $http){
                 alert(data);
             });
     };
+
+    $scope.login = function(username, password) {
+
+        var data = {
+            "username" : username,
+            "password" : password
+        }
+
+        $http.post("http://folk.ntnu.no/simoneik/PinMe/login.php", data).
+            success(function(data, status){
+                console.log("Success!");
+                alert(data);
+                //redirect('login')
+            }).
+            error(function(data, status){
+                console.log("Error");
+                console.log(data || "No data returned." );
+                console.log(status);
+                alert(data);
+            });
+
+    }
 
 
 

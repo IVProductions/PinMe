@@ -4,12 +4,12 @@
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12">
-            <input type="text" placeholder="username"/>
+            <input ng-model="user.name" type="text" placeholder="username"/>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12">
-            <input type="password" placeholder="password"/>
+            <input ng-model="user.password" type="password" placeholder="password"/>
         </div>
     </div>
     <div class="row">
@@ -17,7 +17,7 @@
             <button class="btn btn-info" ng-click="redirect('newuser')">New user</button>
         </div>
         <div class="col-xs-6 col-sm-6">
-            <button class="btn btn-primary" ng-click="redirect('login')">Log in</button>
+            <button class="btn btn-primary" ng-click="login(user.name, user.password)">Log in</button>
         </div>
     </div>
 </div>

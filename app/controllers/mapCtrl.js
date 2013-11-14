@@ -43,8 +43,9 @@ PinMe.controller("mapCtrl", [ '$scope', function($scope) {
    //  navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
     navigator.geolocation.getCurrentPosition(function (position) {
-        console.log(position);
-        console.log("hello");
+        latitude = position.coords.latitude;
+        longitude = position.coords.longitude;
+
         alert('Latitude: '              + position.coords.latitude          + '\n' +
             'Longitude: '             + position.coords.longitude         + '\n' +
             'Altitude: '              + position.coords.altitude          + '\n' +

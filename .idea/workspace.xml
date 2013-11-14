@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384211109244" ignored="false" />
     <file path="/config.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384211776492" ignored="false" />
-    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384469200758" ignored="false" />
+    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384469361475" ignored="false" />
     <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384219233880" ignored="false" />
     <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384467100505" ignored="false" />
     <file path="/app.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384467518983" ignored="false" />
@@ -93,7 +92,7 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="29" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.425">
+            <state line="47" column="8" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.475">
               <folding />
             </state>
           </provider>
@@ -639,7 +638,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="29" selection-start="1617" selection-end="1617" vertical-scroll-proportion="0.425">
+        <state line="47" column="8" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.475">
           <folding />
         </state>
       </provider>

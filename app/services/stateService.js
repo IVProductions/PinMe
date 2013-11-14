@@ -8,16 +8,16 @@ PinMe.factory("stateService", function () {
         return latitude;
     };
 
-    functions.setLatitude = function(){
-        return latitude;
+    functions.setLatitude = function(la){
+        latitude = la;
     };
 
     functions.getLongitude = function(){
         return longitude;
     };
 
-    functions.setLongitude = function(){
-        return longitude;
+    functions.setLongitude = function(lo){
+        longitude = lo;
     };
 
     return {functions: functions};

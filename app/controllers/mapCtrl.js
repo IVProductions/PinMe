@@ -5,7 +5,16 @@ function mapCtrl($scope, stateService){
         center: {
             lat: stateService.functions.getLatitude(),
             lng: stateService.functions.getLongitude(),
-            zoom: 4
+            zoom: 10
+        },
+        markers: {
+            icongardens: {
+                lat: stateService.functions.getLatitude(),
+                lng: stateService.functions.getLongitude(),
+                message: "Its the fucking catalina wine mixer",
+                focus: true,
+                draggable: false
+            }
         },
         defaults: {
             scrollWheelZoom: false

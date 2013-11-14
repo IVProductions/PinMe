@@ -36,11 +36,11 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "password" : password
         }
 
-        $http.post("http://folk.ntnu.no/simoneik/PinMe/login.php", data).
+        $http.post("http://folk.ntnu.no/simoneik/PinMe/login2.php", data).
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
-                //redirect('login')
+                redirect('map')
             }).
             error(function(data, status){
                 console.log("Error");

@@ -5,11 +5,12 @@ PinMe.controller("mapCtrl", [ '$scope', function($scope) {
     $("#map").css({'height': window.innerHeight});
 
 
+       /*
     var onSuccess = function(position) {
         console.log("onsuccess");
         latitude = position.coords.latitude;
         longitude = position.coords.longitude;
-
+        /*
         var myOptions = {
             zoom: 15,
             center: new google.maps.LatLng(latitude, longitude),
@@ -20,7 +21,7 @@ PinMe.controller("mapCtrl", [ '$scope', function($scope) {
 
         console.log("done");
 
-         alert('Latitude: '          + position.coords.latitude          + '\n' +
+         alert('Latitude: '    + position.coords.latitude          + '\n' +
          'Longitude: '         + position.coords.longitude         + '\n' +
          'Altitude: '          + position.coords.altitude          + '\n' +
          'Accuracy: '          + position.coords.accuracy          + '\n' +
@@ -37,9 +38,22 @@ PinMe.controller("mapCtrl", [ '$scope', function($scope) {
      alert('code: '    + error.code    + '\n' +
      'message: ' + error.message + '\n');
      }
+      */
 
-     navigator.geolocation.getCurrentPosition(onSuccess, onError);
+   //  navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
+    navigator.geolocation.getCurrentPosition(function (position) {
+        console.log(position);
+        console.log("hello");
+        alert('Latitude: '              + position.coords.latitude          + '\n' +
+            'Longitude: '             + position.coords.longitude         + '\n' +
+            'Altitude: '              + position.coords.altitude          + '\n' +
+            'Accuracy: '              + position.coords.accuracy          + '\n' +
+            'Altitude Accuracy: '     + position.coords.altitudeAccuracy  + '\n' +
+            'Heading: '               + position.coords.heading           + '\n' +
+            'Speed: '                 + position.coords.speed             + '\n' +
+            'Timestamp: '             + position.timestamp                + '\n');
+    });
 
     angular.extend($scope, {
         center: {

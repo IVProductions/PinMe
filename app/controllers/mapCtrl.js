@@ -10,7 +10,7 @@ function mapCtrl($scope, stateService){
         markers: {
             icongardens: {
                 lat: stateService.functions.getLatitude(),
-                lng: stateService.functions.getLatitude(),
+                lng: stateService.functions.getLongitude(),
                 message: "Its the fucking catalina wine mixer",
                 focus: true,
                 draggable: false

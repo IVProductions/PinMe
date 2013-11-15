@@ -1,4 +1,23 @@
-<leaflet id="map" center="center" markers="markers"></leaflet>
+<div id="sp-nav">
+    <!-- put your menu in here -->
+    <p>hello</p>
+    <button ng-click="$spMenu.toggle()">exit</button>
+</div>
+
+<div id="sp-page">
+    <!-- put your page content in here -->
+
+    <leaflet
+
+            id="map"
+            center="center"
+            markers="markers"
+
+    ></leaflet>
+    <button class="btn btn-default" id="header" ng-click="$spMenu.toggle()">Menu</button>
+    <button class="btn btn-success" id="newPin">Check in</button>
+</div>
+
 
 
 <!--<div class="google-map"
@@ -14,4 +33,3 @@
      style="height: 1000px; width: 100%">
 </div>
 -->
-<button class="btn btn-success" id="newPin">Check in</button>

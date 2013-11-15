@@ -1,5 +1,5 @@
  <!-- Declare a module -->
-var PinMe = angular.module('PinMe', ['ngResource', 'leaflet-directive']);
+var PinMe = angular.module('PinMe', ['ngResource', 'leaflet-directive', 'shoppinpal.mobile-menu']);
 
 <!--Routing-->
 PinMe.config(function ($routeProvider){

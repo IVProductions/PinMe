@@ -2,10 +2,11 @@ function mapCtrl($scope, stateService){
     $("#map").css({'height': window.innerHeight});
 
     angular.extend($scope, {
+        dragging: false,
         center: {
             lat: stateService.functions.getLatitude(),
             lng: stateService.functions.getLongitude(),
-            zoom: 10
+            zoom: 10,
         },
         markers: {
             icongardens: {

@@ -14,8 +14,10 @@
             markers="markers"
 
     ></leaflet>
-    <button class="btn btn-default" id="header" ng-click="$spMenu.toggle()">Menu</button>
-    <button class="btn btn-success" id="newPin">Check in</button>
+    <div id="header">
+        <button class="btn btn-default" ng-click="$spMenu.toggle()">Menu</button>
+    </div>
+    <button class="btn btn-success" ng-click="addMarker()" id="newPin">Pin</button>
 </div>
 
 

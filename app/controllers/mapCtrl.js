@@ -1,27 +1,31 @@
-function mapCtrl($scope, stateService){
+function mapCtrl($scope, stateService, markerFactory){
     $("#map").css({'height': window.innerHeight});
+
+    var lat = stateService.functions.getLatitude();
+    var lng = stateService.functions.getLongitude();
 
     angular.extend($scope, {
         dragging: false,
         center: {
-            lat: stateService.functions.getLatitude(),
-            lng: stateService.functions.getLongitude(),
-            zoom: 10,
+            lat: lat,
+            lng: lng,
+            zoom: 10
         },
-        markers: {
-            icongardens: {
-                lat: stateService.functions.getLatitude(),
-                lng: stateService.functions.getLongitude(),
-                message: "Its the fucking catalina wine mixer",
-                focus: true,
-                draggable: false
-            }
-        },
+        markers: markerFactory.markers,
         defaults: {
             scrollWheelZoom: false
         }
     });
 
+    $scope.addMarker = function() {
+        $scope.markers.push({
+            lat: 50,
+            lng: 50,
+            message: "My Added Marker",
+            focus: true,
+            draggable: false
+        });
+    };
 
      $scope.redirect = function(path) {
          $location.path(path);

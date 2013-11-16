@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/login.html" afterPath="$PROJECT_DIR$/app/partials/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384476343053" ignored="false" />
     <file path="/config.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384211776492" ignored="false" />
-    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384471806134" ignored="false" />
-    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384476647877" ignored="false" />
-    <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384476455883" ignored="false" />
+    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384568484552" ignored="false" />
+    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384568141996" ignored="false" />
+    <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384550974125" ignored="false" />
     <file path="/app.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384476469960" ignored="false" />
-    <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384478238895" ignored="false" />
+    <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384553025648" ignored="false" />
     <file path="/login.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384478314771" ignored="false" />
     <file path="/service.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384470928706" ignored="false" />
     <file path="/loginCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384470600592" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384574122800" ignored="false" />
+    <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384553512606" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,64 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="69" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-15.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="96" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Content/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="15" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="39" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/partials/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="110" selection-start="735" selection-end="735" vertical-scroll-proportion="0.49222797">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loginCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="39" selection-start="0" selection-end="71" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cordova.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/cordova.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4805" column="69" selection-start="183426" selection-end="183439" vertical-scroll-proportion="0.0">
+            <state line="19" column="57" selection-start="477" selection-end="477" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -107,7 +52,7 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="94" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
+            <state line="25" column="38" selection-start="676" selection-end="676" vertical-scroll-proportion="-6.818182">
               <folding />
             </state>
           </provider>
@@ -116,16 +61,16 @@
       <file leaf-file-name="stateService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+            <state line="4" column="24" selection-start="104" selection-end="123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newUserCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/newUserCtrl.js">
+      <file leaf-file-name="markerFactory.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
+            <state line="11" column="12" selection-start="300" selection-end="451" vertical-scroll-proportion="0.36666667">
               <folding />
             </state>
           </provider>
@@ -158,19 +103,20 @@
         <option value="$PROJECT_DIR$/app/services/service.js" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/app/services/stateService.js" />
-        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/Content/css/style.css" />
-        <option value="$PROJECT_DIR$/app/partials/map.html" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/partials/map.html" />
+        <option value="$PROJECT_DIR$/Content/css/style.css" />
+        <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
+        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -460,14 +406,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="698" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.86507934" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13492064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24911785" sideWeight="0.8241379" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17586207" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -555,27 +501,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Content/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="104" selection-end="104" vertical-scroll-proportion="-3.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/angular-google-maps.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="548" column="5" selection-start="18470" selection-end="18470" vertical-scroll-proportion="13.654485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="27" selection-start="6703" selection-end="6703" vertical-scroll-proportion="0.0">
@@ -611,20 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/cordova.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4805" column="69" selection-start="183426" selection-end="183439" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="96" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
@@ -632,37 +543,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Scripts/cordova.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="15" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="94" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="69" selection-start="1551" selection-end="1551" vertical-scroll-proportion="-15.875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="109" selection-end="109" vertical-scroll-proportion="-1.875">
+        <state line="4805" column="69" selection-start="183426" selection-end="183439" vertical-scroll-proportion="0.025423728">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="110" selection-start="735" selection-end="735" vertical-scroll-proportion="0.49222797">
+        <state line="19" column="110" selection-start="735" selection-end="735" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="69" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.7357513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.78984237">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/ng-mobile-menu.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="60" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.22998296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.26996806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="57" selection-start="477" selection-end="477" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="24" selection-start="104" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="38" selection-start="676" selection-end="676" vertical-scroll-proportion="-6.818182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="12" selection-start="300" selection-end="451" vertical-scroll-proportion="0.36666667">
           <folding />
         </state>
       </provider>

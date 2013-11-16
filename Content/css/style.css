@@ -37,16 +37,27 @@ body {
 
 #newPin {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    border-radius: 0;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
 }
 
 #header {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 10%;
-    border-radius: 0;
+    height: 50px;
+    background-color: white;
+}
+
+#header button {
+    float: right;
+    margin-right: 8px;
+    margin-top: 8px;
+
+}
+
+.leaflet-control {
+    margin-top: 60px!important;
 }

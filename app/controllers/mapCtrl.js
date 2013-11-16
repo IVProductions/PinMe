@@ -11,22 +11,6 @@ function mapCtrl($scope, stateService, markerFactory){
             lng: stateService.functions.getLongitude(),
             zoom: 10
         },
-        markers: {
-            icongardens: {
-                lat: stateService.functions.getLatitude(),
-                lng: stateService.functions.getLongitude(),
-                message: "Its the fucking catalina wine mixer",
-                focus: true,
-                draggable: false
-            },
-            mongo: {
-                lat: stateService.functions.getLatitude()+0.31,
-                lng: stateService.functions.getLongitude(),
-                message: "2nd Marker",
-                focus: true,
-                draggable: false
-            }
-        },
         markers: markerFactory.markers,
         defaults: {
             scrollWheelZoom: false

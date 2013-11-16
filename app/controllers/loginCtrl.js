@@ -95,7 +95,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             destinationType: destinationType.DATA_URL });
     };
 
-    function cameraSuccess(imageURI) {
+    function onPhotoDataSuccess(imageURI) {
         // Uncomment to view the base64-encoded image data
         // console.log(imageData);
 
@@ -131,7 +131,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
         largeImage.src = imageURI;
     }
 
-    function cameraError(message) {
+    function onFail(message) {
         alert('Failed because: ' + message);
     }
 

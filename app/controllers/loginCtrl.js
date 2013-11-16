@@ -79,17 +79,62 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
-    $scope.take_picture = function(username, password) {
+    // START
+    var pictureSource;   // picture source
+    var destinationType; // sets the format of returned value
+    document.addEventListener("deviceready",onDeviceReady,false);
+
+    function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+
+    $scope.capturePhoto = function() {
         console.log("picture");
-        navigator.camera.getPicture(cameraSuccess, cameraError);
+        navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+            destinationType: destinationType.DATA_URL });
     };
 
-    function cameraSuccess(imageData) {
+    function cameraSuccess(imageURI) {
+        // Uncomment to view the base64-encoded image data
+        // console.log(imageData);
 
+        // Get image handle
+        //
+        var smallImage = document.getElementById('smallImage');
+
+        // Unhide image elements
+        //
+        smallImage.style.display = 'block';
+
+        // Show the captured photo
+        // The inline CSS rules are used to resize the image
+        //
+        smallImage.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    function onPhotoURISuccess(imageURI) {
+        // Uncomment to view the image file URI
+        // console.log(imageURI);
+
+        // Get image handle
+        //
+        var largeImage = document.getElementById('largeImage');
+
+        // Unhide image elements
+        //
+        largeImage.style.display = 'block';
+
+        // Show the captured photo
+        // The inline CSS rules are used to resize the image
+        //
+        largeImage.src = imageURI;
     }
 
     function cameraError(message) {
-
+        alert('Failed because: ' + message);
     }
 
+
+    //END
 }

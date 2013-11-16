@@ -7,8 +7,8 @@ function mapCtrl($scope, stateService, markerFactory){
     angular.extend($scope, {
         dragging: false,
         center: {
-            lat: stateService.functions.getLatitude(),
-            lng: stateService.functions.getLongitude(),
+            lat: lat,
+            lng: lng,
             zoom: 10
         },
         markers: markerFactory.markers,
@@ -18,13 +18,13 @@ function mapCtrl($scope, stateService, markerFactory){
     });
 
     $scope.addMarker = function() {
-        $scope.markers.push({
-            lat: 50,
-            lng: 50,
-            message: "My Added Marker",
-            focus: true,
+        $scope.markers['islavista']={
+            lat: lat,
+            lng: lng,
+            message: "This is my spot",
+            focus: false,
             draggable: false
-        });
+        };
     };
 
      $scope.redirect = function(path) {

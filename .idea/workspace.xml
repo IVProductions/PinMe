@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384645793361" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384645804675" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384646232248" ignored="false" />
+    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384646117458" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +32,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="55" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
+            <state line="21" column="55" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-10.625">
               <folding />
             </state>
           </provider>
@@ -48,16 +50,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+            <state line="1" column="74" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.36862004">
+            <state line="21" column="74" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,10 +148,10 @@
         <option value="$PROJECT_DIR$/app/services/service.js" />
         <option value="$PROJECT_DIR$/app/services/stateService.js" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/app/partials/map.html" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/app/partials/map.html" />
       </list>
     </option>
   </component>
@@ -367,7 +369,18 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="PublishConfig">
+    <servers>
+      <server id="5e285b50-79db-45e9-b8e8-0a669e2f161c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Unnamed">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -386,12 +399,30 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="Unnamed" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="chrome" />
+        <option name="fileUrl" value="http://localhost:63342/ShareThis/" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unnamed" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true" uri="http://localhost:63342/ShareThis">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.Unnamed" />
+    </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
@@ -426,8 +457,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24841213" sideWeight="0.8642857" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13571429" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24841213" sideWeight="0.86551726" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13448276" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -563,30 +594,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="55" selection-start="1066" selection-end="1066" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/newUserCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="8" selection-start="3854" selection-end="3854" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -605,16 +615,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+        <state line="21" column="74" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.36862004">
+        <state line="21" column="55" selection-start="1066" selection-end="1066" vertical-scroll-proportion="-10.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="8" selection-start="3854" selection-end="3854" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="74" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

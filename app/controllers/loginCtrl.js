@@ -39,8 +39,14 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
         $http.post("http://folk.ntnu.no/simoneik/PinMe/login2.php", data).
             success(function(data, status){
                 console.log("Success!");
-                alert(data);
-                redirect('map')
+                console.log(data);
+                alert("Number of rows matching query: " + data);
+                if (data == true) {
+                    $scope.redirect('login')
+                }
+                else {
+                    $scope.redirect('/')
+                }
             }).
             error(function(data, status){
                 console.log("Error");

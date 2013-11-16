@@ -79,4 +79,17 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
+    $scope.take_picture = function(username, password) {
+        console.log("picture");
+        navigator.camera.getPicture(cameraSuccess, cameraError);
+    };
+
+    function cameraSuccess(imageData) {
+
+    }
+
+    function cameraError(message) {
+
+    }
+
 }

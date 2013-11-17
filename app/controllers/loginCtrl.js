@@ -85,13 +85,10 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
         $http.post("http://folk.ntnu.no/simoneik/PinMe/save_image.php", data).
             success(function(data, status){
-
+                alert(data);
             }).
             error(function(data, status){
-                console.log("Error");
-                console.log(data || "No data returned." );
-                console.log(status);
-                alert(data);
+                alert("Failed to Save Image");
             });
     }
 

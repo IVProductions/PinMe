@@ -9,8 +9,8 @@ function mapCtrl($scope, stateService, markerFactory){
     angular.extend($scope, {
         dragging: false,
         center: {
-            lat: stateService.functions.getLatitude(),
-            lng: stateService.functions.getLongitude(),
+            lat: lat,
+            lng: lng,
             zoom: 10
         },
         markers: markerFactory.markers,

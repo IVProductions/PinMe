@@ -54,7 +54,42 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
                 console.log(status);
                 alert(data);
             });
+    }
 
+    $scope.getImage = function(username) {
+
+        var data = {
+            "username" : username
+        }
+
+        $http.post("http://folk.ntnu.no/simoneik/PinMe/get_image.php", data).
+            success(function(data, status){
+                console.log("Fagg" + data);
+                var smallImage = document.getElementById('smallImage');
+                smallImage.style.display = 'block';
+                smallImage.src = data;
+            }).
+            error(function(data, status){
+                console.log("Error");
+                console.log(data || "No data returned." );
+                console.log(status);
+                alert(data);
+            });
+    }
+
+    $scope.saveImage = function(imageData) {
+
+        var data = {
+            "imageData" : imageData
+        }
+
+        $http.post("http://folk.ntnu.no/simoneik/PinMe/save_image.php", data).
+            success(function(data, status){
+                alert(data);
+            }).
+            error(function(data, status){
+                alert("Failed to Save Image");
+            });
     }
 
 
@@ -95,22 +130,16 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             destinationType: destinationType.DATA_URL });
     };
 
-    function onPhotoDataSuccess(imageURI) {
+    function onPhotoDataSuccess(imageData) {
         // Uncomment to view the base64-encoded image data
-        // console.log(imageData);
 
-        // Get image handle
-        //
-        var smallImage = document.getElementById('smallImage');
+        //var smallImage = document.getElementById('smallImage');
 
-        // Unhide image elements
-        //
-        smallImage.style.display = 'block';
+        //smallImage.style.display = 'block';
 
-        // Show the captured photo
-        // The inline CSS rules are used to resize the image
-        //
-        smallImage.src = "data:image/jpeg;base64," + imageData;
+        //smallImage.src = "data:image/jpeg;base64," + imageData;
+
+        $scope.saveImage(imageData);
     }
 
     function onPhotoURISuccess(imageURI) {

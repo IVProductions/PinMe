@@ -1,23 +1,45 @@
 <div id="sp-nav">
     <!-- put your menu in here -->
-    <p>hello</p>
-    <button ng-click="$spMenu.toggle()">exit</button>
+    <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle()">Back To Map</button>
 </div>
 
 <div id="sp-page">
     <!-- put your page content in here -->
 
-    <leaflet
+    <div ng-show="!newMark">
+        <leaflet
+                id="map"
+                ng-hide="newMark"
+                center="center"
+                markers="markers"
 
-            id="map"
-            center="center"
-            markers="markers"
-
-    ></leaflet>
+        ></leaflet>
+    </div>
     <div id="header">
+        <h2 id="title"><strong class="pin">Pin</strong><strong class="it">it</strong></h2>
         <button class="btn btn-default" ng-click="$spMenu.toggle()">Menu</button>
     </div>
-    <button class="btn btn-success" ng-click="addMarker()" id="newPin">Pin</button>
+    <button class="btn btn-success" ng-click="newMark = true;" id="newPin">Pin</button>
+
+    <div id="newMarker" ng-show="newMark">
+        <button class="btn btn-primary save" ng-click="newMark = false">Back To Map</button>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <input type="text" placeholder="Name"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <input type="text" placeholder="Tags"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <textarea class="description" placeholder="Description"></textarea>
+            </div>
+        </div>
+        <button class="btn btn-success save" ng-click="newMark = false;">Save</button>
+    </div>
 </div>
 
 

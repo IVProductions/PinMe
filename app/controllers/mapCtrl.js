@@ -4,6 +4,8 @@ function mapCtrl($scope, stateService, markerFactory){
     var lat = stateService.functions.getLatitude();
     var lng = stateService.functions.getLongitude();
 
+    $scope.newMark = false;
+
     angular.extend($scope, {
         dragging: false,
         center: {

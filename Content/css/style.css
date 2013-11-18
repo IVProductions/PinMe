@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: white;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
 .login {
     text-align: center;
     color: royalblue;
-    margin: 10px;
 }
 
 .login input {
@@ -22,13 +21,61 @@ body {
     margin-bottom: 10px;
     border-radius: 2px;
     border: 1px #808080 solid;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .login .btn {
     width: 100%;
     color: black;
 }
+
+.pin {
+    color: firebrick;
+}
+
+.it {
+    color: royalblue;
+}
+
+.inputlogin {
+   margin: 20px;
+}
+
+.inputlogin button {
+    margin-top: 20px;
+}
+
+.loginheader {
+    background-color: #f5f5f5;
+    height: 45px;
+}
+
+.loginheader h2 {
+    margin-top: 6px;
+}
+
+.inputlogin input {
+    border: 1px solid lightgrey;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.inputlogin .btn-success {
+    color: white;
+    height: 40px;
+}
+
+.login .btn-primary {
+    color: white;
+    height: 40px;
+}
+
+.login .newuser {
+    position: absolute;
+    bottom: 10px;
+}
+
 
 /** Map **/
 .leaflet-bottom.leaflet-right {
@@ -38,9 +85,10 @@ body {
 #newPin {
     position: absolute;
     bottom: 10px;
-    right: 10px;
-    width: 70px;
-    height: 70px;
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    height: 40px;
 }
 
 #header {
@@ -48,16 +96,66 @@ body {
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#title {
+    text-align: center;
+    margin-top: 10px;
 }
 
 #header button {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
     margin-right: 8px;
     margin-top: 8px;
+    color: royalblue;
+}
 
+.backtomap {
+    width: 93%;
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    right: 10px;
+    left: 10px;
 }
 
 .leaflet-control {
     margin-top: 60px!important;
+}
+
+#sp-nav {
+    background-color: white;
+}
+
+#newMarker {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#newMarker textarea,
+#newMarker input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.description {
+    height: 80px!important;
+    padding-top: 10px;
+}
+
+.save {
+    width: 100%;
+    margin-bottom: 10px;
 }

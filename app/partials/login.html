@@ -1,29 +1,32 @@
 <div class="login">
-    <div class="row">
-        <h2>PinMe</h2>
+    <div class="row loginheader">
+        <h2><strong class="pin">Pin</strong><strong>it</strong></h2>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12">
-            <input ng-model="user.name" type="text" placeholder="username"/>
+    <div class="inputlogin">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <input ng-model="user.name" type="text" placeholder="username"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <input ng-model="user.password" type="password" placeholder="password"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <!--<button class="btn btn-primary" ng-click="login(user.name, user.password)">Log in</button>  -->
+                <button class="btn btn-success" ng-click="redirect('login')">Log in</button>
+            </div>
+        <!--
+            <div class="col-xs-12 col-sm-12">
+                <!--<button class="btn btn-primary" ng-click="login(user.name, user.password)">Log in</button>  -->
+                <!--<button class="btn btn-primary" ng-click="capturePhoto()">Picture</button>
+            </div> -->
         </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12">
-            <input ng-model="user.password" type="password" placeholder="password"/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-sm-6">
-            <button class="btn btn-info" ng-click="redirect('newuser')">New user</button>
-        </div>
-        <div class="col-xs-6 col-sm-6">
-           <!--<button class="btn btn-primary" ng-click="login(user.name, user.password)">Log in</button>  -->
-            <button class="btn btn-primary" ng-click="redirect('login')">Log in</button>
-        </div>
-        <div class="col-xs-6 col-sm-6">
-            <!--<button class="btn btn-primary" ng-click="login(user.name, user.password)">Log in</button>  -->
-            <button class="btn btn-primary" ng-click="capturePhoto()">Picture</button>
-        </div>
+    <div class="col-xs-12 col-sm-12 newuser">
+        <button class="btn btn-primary" ng-click="redirect('newuser')">New user</button>
     </div>
 </div>
 

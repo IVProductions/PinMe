@@ -20,6 +20,8 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
+                stateService.functions.setCurrentUser(username);
+                $scope.redirect('login');
             }).
             error(function(data, status){
                 console.log("Error");
@@ -41,12 +43,14 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
                 console.log("Success!");
                 console.log(data);
                 alert("Number of rows matching query: " + data);
+                stateService.functions.setCurrentUser(username);
                 if (data == true) {
-                    $scope.redirect('login')
+                    $scope.redirect('login');
                 }
                 else {
-                    $scope.redirect('/')
+                    $scope.redirect('/');
                 }
+
             }).
             error(function(data, status){
                 console.log("Error");

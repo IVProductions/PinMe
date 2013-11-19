@@ -5,33 +5,151 @@ function mapCtrl($scope, stateService, markerFactory){
     var lng = stateService.functions.getLongitude();
 
     $scope.newMark = false;
+    $scope.mark = false;
+
+    $scope.category = "Choose a category";
+    $scope.name = "";
+    $scope.description = "";
+    $scope.user = "Crampleg";
+    $scope.markimageurl = "Content/img/basket.png";
 
     angular.extend($scope, {
         dragging: false,
         center: {
             lat: lat,
             lng: lng,
-            zoom: 10
+            zoom: 14
         },
         markers: markerFactory.markers,
         defaults: {
+            tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
             scrollWheelZoom: false
         }
     });
 
+    $scope.$on('leafletDirectiveMarker.click', function(e, args) {
+        // Args will contain the marker name and other relevant information
+        $scope.mark = true;
+        $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","hidden");
+
+        var name = args.markerName;
+        var marker = $scope.markers[name];
+
+        $scope.name = marker.name;
+        $scope.category = marker.category;
+        $scope.description = marker.description;
+
+        $scope.setCategoryColor($scope.category);
+
+        //$scope.category = args.markers[name].
+        //console.log($scope.markers[name].name);
+        //console.log($scope.markers.getLatitude());
+        //console.log($scope.markers.name.lng);
+
+       // console.log($scope.markers.islavista.message);
+       // console.log(args.markerName);
+    });
+    $scope.$on('leafletDirectiveMarker.popupopen', function(e, args) {
+        // Args will contain the marker name and other relevant information
+        console.log("Leaflet Popup Open");
+    });
+    $scope.$on('leafletDirectiveMarker.popupclose', function(e, args) {
+        // Args will contain the marker name and other relevant information
+        console.log("Leaflet Popup Close");
+    });
+
+    $scope.showMark = function() {
+        console.log("showmark");
+        mark = true;
+    };
+
     $scope.addMarker = function() {
-        $scope.markers['islavista']={
+        $scope.markers['marker0001'] = {
             lat: lat,
             lng: lng,
-            message: "This is my spot",
-            focus: false,
+            name: $scope.name,
+            description: $scope.description,
+            category: $scope.category,
+            user: $scope.user,
+            focus: true,
             draggable: false
         };
     };
 
+    $scope.closeMark = function() {
+        $scope.mark = false;
+        $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","visible");
+    }
+
+    $scope.setCategory = function(i) {
+        switch(i)
+        {
+            case 1:
+                $scope.category = "Recreational";
+                $(".dropdown-toggle").css("background-color","rgb(255,122,122)");
+                break;
+            case 2:
+                $scope.category = "Dining";
+                $(".dropdown-toggle").css("background-color","rgb(195,122,255)");
+                break;
+            case 3:
+                $scope.category = "Entertainment";
+                $(".dropdown-toggle").css("background-color","rgb(122,131,255)");
+                break;
+            case 4:
+                $scope.category = "Educational";
+                $(".dropdown-toggle").css("background-color","rgb(122,255,162)");
+                break;
+            case 5:
+                $scope.category = "Attraction";
+                $(".dropdown-toggle").css("background-color","rgb(204,255,122)");
+                break;
+            case 6:
+                $scope.category = "Shops";
+                $(".dropdown-toggle").css("background-color","rgb(255,209,122)");
+                break;
+            case 7:
+                $scope.category = "Others";
+                $(".dropdown-toggle").css("background-color","rgb(176,176,176)");
+                break;
+            default:
+                $scope.category = "Choose a category";
+        }
+    };
+
+    $scope.setCategoryColor = function(category) {
+        if(category == "Recreational"){
+            $("#markcategory").css("background-color","rgb(255,122,122)");
+        }
+        else if (category == "Dining"){
+            $("#markcategory").css("background-color","rgb(195,122,255)");
+        }
+        else if (category == "Entertainment"){
+            $("#markcategory").css("background-color","rgb(122,131,255)");
+        }
+        else if (category == "Educational"){
+            $("#markcategory").css("background-color","rgb(122,255,162)");
+        }
+        else if (category == "Attraction"){
+            $("#markcategory").css("background-color","rgb(204,255,122)");
+        }
+        else if (category == "Shops"){
+            $("#markcategory").css("background-color","rgb(255,209,122)");
+        }
+        else {
+            $("#markcategory").css("background-color","rgb(176,176,176)");
+        }
+    };
+
+
+
      $scope.redirect = function(path) {
          $location.path(path);
      }
+}
+
+function myFunction(lng){
+    console.log(lng.class);
 }
 /*
 function mapCtrl($scope, $location){

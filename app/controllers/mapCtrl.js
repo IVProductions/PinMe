@@ -147,16 +147,17 @@ function mapCtrl($scope, stateService, markerFactory){
         }
     };
 
-
+    $scope.capturePhoto = function() {
+        console.log("picture");
+        navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20,
+            destinationType: destinationType.DATA_URL });
+    };
 
      $scope.redirect = function(path) {
          $location.path(path);
      }
 }
 
-function myFunction(lng){
-    console.log(lng.class);
-}
 /*
 function mapCtrl($scope, $location){
 

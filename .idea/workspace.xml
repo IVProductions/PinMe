@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/controllers/mapCtrl.js" line="156" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/app/controllers/mapCtrl.js" line="159" mnemonic="8" />
     <bookmark url="file://$PROJECT_DIR$/app/partials/map.html" line="71" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/loginCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/markerFactory.js" afterPath="$PROJECT_DIR$/app/services/markerFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384830515492" ignored="false" />
+    <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384840983355" ignored="false" />
     <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384840670721" ignored="false" />
     <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384836756333" ignored="false" />
-    <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384830044302" ignored="false" />
+    <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384841234798" ignored="false" />
     <file path="/login.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384756493402" ignored="false" />
     <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384840343804" ignored="false" />
     <file path="/app.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384819942452" ignored="false" />
@@ -70,7 +71,7 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
+            <state line="149" column="23" selection-start="5198" selection-end="5210" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="30" selection-start="3027" selection-end="3027" vertical-scroll-proportion="0.0">
+            <state line="62" column="68" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.82701814">
               <folding />
             </state>
           </provider>
@@ -103,15 +104,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="markerFactory.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.2857143">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -121,10 +113,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="loginCtrl.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="0" selection-start="3760" selection-end="3760" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="newuser.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-16.875">
+            <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,16 +155,16 @@
         <option value="$PROJECT_DIR$/app/services/service.js" />
         <option value="$PROJECT_DIR$/app/services/stateService.js" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/Scripts/ui-bootstrap.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/partials/map.html" />
         <option value="$PROJECT_DIR$/app/partials/newuser.html" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
-        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
         <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
+        <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
+        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/app/partials/map.html" />
       </list>
     </option>
   </component>
@@ -376,14 +377,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UCSB Classes/CMPSC290B Software Systems/MovieShare/MovieShare" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UCSB Classes/CMPSC290B Software Systems/MovieShare/MovieShare" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -485,8 +486,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24841213" sideWeight="0.9007937" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09920635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24841213" sideWeight="0.9021164" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0978836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -586,11 +587,6 @@
         <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="39" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/cordova.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4819" column="21" selection-start="184121" selection-end="184121" vertical-scroll-proportion="0.0" />
@@ -631,16 +627,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="30" selection-start="3027" selection-end="3027" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-16.875">
+        <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -652,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="19" selection-start="63" selection-end="98" vertical-scroll-proportion="0.0">
@@ -666,16 +648,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
+        <state line="12" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
+    <entry file="file://$PROJECT_DIR$/app/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.2857143">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="0" selection-start="3760" selection-end="3760" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="23" selection-start="5198" selection-end="5210" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="68" selection-start="2454" selection-end="2454" vertical-scroll-proportion="0.82701814">
           <folding />
         </state>
       </provider>

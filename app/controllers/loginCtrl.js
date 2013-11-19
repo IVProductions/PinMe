@@ -124,11 +124,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
         destinationType=navigator.camera.DestinationType;
     }
 
-    $scope.capturePhoto = function() {
-        console.log("picture");
-        navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20,
-            destinationType: destinationType.DATA_URL });
-    };
+
 
     function onPhotoDataSuccess(imageData) {
         // Uncomment to view the base64-encoded image data

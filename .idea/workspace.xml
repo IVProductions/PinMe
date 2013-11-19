@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/controllers/mapCtrl.js" line="150" mnemonic="8" />
+    <bookmark url="file://$PROJECT_DIR$/app/controllers/mapCtrl.js" line="156" mnemonic="8" />
     <bookmark url="file://$PROJECT_DIR$/app/partials/map.html" line="71" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/newuser.html" afterPath="$PROJECT_DIR$/app/partials/newuser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/markerFactory.js" afterPath="$PROJECT_DIR$/app/services/markerFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384830515492" ignored="false" />
-    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384830134693" ignored="false" />
-    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384830296549" ignored="false" />
+    <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384840670721" ignored="false" />
+    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384836756333" ignored="false" />
     <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384830044302" ignored="false" />
     <file path="/login.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384756493402" ignored="false" />
-    <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384816290334" ignored="false" />
+    <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384840343804" ignored="false" />
     <file path="/app.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384819942452" ignored="false" />
     <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384820155078" ignored="false" />
     <file path="/newuser.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384835849673" ignored="false" />
@@ -60,7 +61,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0">
+            <state line="225" column="0" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +70,16 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+            <state line="44" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stateService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="19" selection-start="63" selection-end="98" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ui-bootstrap.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/ui-bootstrap.min.js">
+      <file leaf-file-name="markerFactory.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="19611" selection-start="51590" selection-end="51590" vertical-scroll-proportion="0.0">
+            <state line="12" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.2857143">
               <folding />
             </state>
           </provider>
@@ -105,25 +115,16 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="1674" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newuser.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="newuser.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.66831684">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="markerFactory.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+            <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-16.875">
               <folding />
             </state>
           </provider>
@@ -155,14 +156,14 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
-        <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/Scripts/ui-bootstrap.min.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/partials/map.html" />
-        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
-        <option value="$PROJECT_DIR$/Content/css/style.css" />
         <option value="$PROJECT_DIR$/app/partials/newuser.html" />
+        <option value="$PROJECT_DIR$/Content/css/style.css" />
+        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
       </list>
     </option>
   </component>
@@ -580,13 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/newUserCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" />
@@ -604,12 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/angular-leaflet-directive.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4938" selection-start="6378" selection-end="6383" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
+        <state line="30" column="4938" selection-start="6378" selection-end="6383" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -649,30 +638,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+        <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="-16.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="0" selection-start="1934" selection-end="1934" vertical-scroll-proportion="0.0">
+        <state line="225" column="0" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1674" vertical-scroll-proportion="-0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
+    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="38" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.66831684">
+        <state line="1" column="19" selection-start="63" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="432" selection-end="432" vertical-scroll-proportion="0.2857143">
           <folding />
         </state>
       </provider>

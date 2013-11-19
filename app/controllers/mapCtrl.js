@@ -18,7 +18,7 @@ function mapCtrl($scope, stateService, markerFactory){
         center: {
             lat: lat,
             lng: lng,
-            zoom: 14
+            zoom: 16
         },
         markers: markerFactory.markers,
         defaults: {
@@ -29,25 +29,19 @@ function mapCtrl($scope, stateService, markerFactory){
 
     $scope.$on('leafletDirectiveMarker.click', function(e, args) {
         // Args will contain the marker name and other relevant information
-        $scope.mark = true;
-        $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","hidden");
-
         var name = args.markerName;
         var marker = $scope.markers[name];
 
-        $scope.name = marker.name;
-        $scope.category = marker.category;
-        $scope.description = marker.description;
+        if(name != "me"){
+            $scope.mark = true;
+            $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","hidden");
 
-        $scope.setCategoryColor($scope.category);
+            $scope.name = marker.name;
+            $scope.category = marker.category;
+            $scope.description = marker.description;
 
-        //$scope.category = args.markers[name].
-        //console.log($scope.markers[name].name);
-        //console.log($scope.markers.getLatitude());
-        //console.log($scope.markers.name.lng);
-
-       // console.log($scope.markers.islavista.message);
-       // console.log(args.markerName);
+            $scope.setCategoryColor($scope.category);
+        }
     });
     $scope.$on('leafletDirectiveMarker.popupopen', function(e, args) {
         // Args will contain the marker name and other relevant information
@@ -71,6 +65,11 @@ function mapCtrl($scope, stateService, markerFactory){
             description: $scope.description,
             category: $scope.category,
             user: $scope.user,
+            icon: L.icon({
+                iconUrl: 'Content/img/' + $scope.pincolor,
+                iconSize: [38,55],
+                iconAnchor: [18,55]
+            }),
             focus: true,
             draggable: false
         };
@@ -86,30 +85,37 @@ function mapCtrl($scope, stateService, markerFactory){
         {
             case 1:
                 $scope.category = "Recreational";
+                $scope.pincolor = "redpin.png";
                 $(".dropdown-toggle").css("background-color","rgb(255,122,122)");
                 break;
             case 2:
                 $scope.category = "Dining";
+                $scope.pincolor = "purplepin.png";
                 $(".dropdown-toggle").css("background-color","rgb(195,122,255)");
                 break;
             case 3:
                 $scope.category = "Entertainment";
+                $scope.pincolor = "bluepin.png";
                 $(".dropdown-toggle").css("background-color","rgb(122,131,255)");
                 break;
             case 4:
                 $scope.category = "Educational";
+                $scope.pincolor = "greenpin.png";
                 $(".dropdown-toggle").css("background-color","rgb(122,255,162)");
                 break;
             case 5:
                 $scope.category = "Attraction";
+                $scope.pincolor = "yellowpin.png";
                 $(".dropdown-toggle").css("background-color","rgb(204,255,122)");
                 break;
             case 6:
                 $scope.category = "Shops";
+                $scope.pincolor = "orangepin.png";
                 $(".dropdown-toggle").css("background-color","rgb(255,209,122)");
                 break;
             case 7:
                 $scope.category = "Others";
+                $scope.pincolor = "greypin.png";
                 $(".dropdown-toggle").css("background-color","rgb(176,176,176)");
                 break;
             default:

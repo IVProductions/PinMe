@@ -1,17 +1,18 @@
-PinMe.factory("markerFactory", function () {
+PinMe.factory("markerFactory", function (stateService) {
 
     var markers = {
-
-
-
-        icongardens: {
-            lat: 40.095,
-            lng: -3.723,
-            message: "Name",
+        me: {
+            lat: stateService.functions.getLatitude(),
+            lng: stateService.functions.getLongitude(),
             focus: false,
-            draggable: false
+            draggable: false,
+            clickable: false,
+            icon: L.icon({
+                iconUrl: 'Content/img/me.png',
+                iconSize: [30,30],
+                iconAnchor: [14,16]
+            })
         }
-
     };
 
     return {markers:markers};

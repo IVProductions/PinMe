@@ -21,6 +21,7 @@ PinMe.factory("markerFactory", function (stateService, $http) {
 
     $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
         success(function(data, status){
+            alert(data);
             console.log(data);
         }).
         error(function(data, status){

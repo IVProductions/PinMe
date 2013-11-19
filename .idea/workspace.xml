@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="" />
+    <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/markerFactory.js" afterPath="$PROJECT_DIR$/app/services/markerFactory.js" />
+    </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384841663738" ignored="false" />
@@ -9,7 +11,7 @@
     <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384891645386" ignored="false" />
     <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384891704237" ignored="false" />
     <file path="/stateService.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384895885607" ignored="false" />
-    <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384896711151" ignored="false" />
+    <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384898801511" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +115,7 @@
       <file leaf-file-name="markerFactory.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="6" selection-start="484" selection-end="484" vertical-scroll-proportion="0.3505535">
+            <state line="23" column="24" selection-start="643" selection-end="643" vertical-scroll-proportion="0.42435426">
               <folding />
             </state>
           </provider>
@@ -646,7 +648,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="484" selection-end="484" vertical-scroll-proportion="0.3505535">
+        <state line="23" column="24" selection-start="643" selection-end="643" vertical-scroll-proportion="0.42435426">
           <folding />
         </state>
       </provider>

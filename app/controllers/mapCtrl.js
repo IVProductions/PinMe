@@ -1,4 +1,4 @@
-function mapCtrl($scope, $http, stateService, markerFactory){
+function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $("#map").css({'height': window.innerHeight});
 
     var lat = stateService.functions.getLatitude();

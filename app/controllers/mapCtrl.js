@@ -209,6 +209,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
     $scope.saveImage = function(imageData) {
 
+
         var data = {
             "imageData" : imageData
         }

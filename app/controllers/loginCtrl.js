@@ -16,7 +16,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 			"password" : password
         };
 
-        $http.post("http://folk.ntnu.no/simoneik/PinMe/test_pin.php", data).
+        $http.post("ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
@@ -36,7 +36,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "password" : password
         }
 
-        $http.post("http://folk.ntnu.no/simoneik/PinMe/login2.php", data).
+        $http.post("ec2-54-227-8-199.compute-1.amazonaws.com/login2.php", data).
             success(function(data, status){
                 console.log("Success!");
                 console.log(data);
@@ -62,7 +62,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "username" : username
         }
 
-        $http.post("http://folk.ntnu.no/simoneik/PinMe/get_image.php", data).
+        $http.post("ec2-54-227-8-199.compute-1.amazonaws.com/get_image.php", data).
             success(function(data, status){
                 console.log("Fagg" + data);
                 var smallImage = document.getElementById('smallImage');
@@ -83,7 +83,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "imageData" : imageData
         }
 
-        $http.post("http://folk.ntnu.no/simoneik/PinMe/save_image.php", data).
+        $http.post("ec2-54-227-8-199.compute-1.amazonaws.com/save_image.php", data).
             success(function(data, status){
                 alert(data);
             }).

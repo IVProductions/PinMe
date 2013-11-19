@@ -45,8 +45,10 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             $scope.name = marker.name;
             $scope.category = marker.category;
             $scope.description = marker.description;
+            $scope.user = marker.username;
+            $scope.imglink = marker.imglink;
 
-            $scope.setCategoryColor($scope.category);
+          //  $scope.setCategoryColor($scope.category);
         }
     });
     $scope.$on('leafletDirectiveMarker.popupopen', function(e, args) {

@@ -212,10 +212,14 @@ function mapCtrl($scope, $http, stateService, markerFactory){
 
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/save_image.php", data).
             success(function(data, status){
-                alert(data);
+                setTimeout(function() {
+                    alert(data);
+                }, 0);
             }).
             error(function(data, status){
-                alert("Failed to Save Image");
+                setTimeout(function() {
+                    alert("Failed to Save Image");
+                }, 0);
             });
     }
 

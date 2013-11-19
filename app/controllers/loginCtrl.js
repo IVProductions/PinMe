@@ -126,7 +126,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
     $scope.capturePhoto = function() {
         console.log("picture");
-        navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20,
             destinationType: destinationType.DATA_URL });
     };
 

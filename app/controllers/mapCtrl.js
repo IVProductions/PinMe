@@ -2,7 +2,9 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $("#map").css({'height': window.innerHeight});
 
     var lat = stateService.functions.getLatitude();
-    var lng = stateService.functions.getLongitude()
+    var lng = stateService.functions.getLongitude();
+
+    var user = stateService.functions.getCurrentUser();
 
     var pictureSource = navigator.camera.PictureSourceType;   // picture source
     var destinationType = navigator.camera.DestinationType; // sets the format of returned value
@@ -13,8 +15,9 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.category = "Choose a category";
     $scope.name = "";
     $scope.description = "";
-    $scope.user = "Crampleg";
+    $scope.user = stateService.functions.getCurrentUser();
     $scope.markimageurl = "Content/img/basket.png";
+    $scope.imgdata = "";
 
     angular.extend($scope, {
         dragging: false,
@@ -61,13 +64,41 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     };
 
     $scope.addMarker = function() {
+        // send data to server
+        var data = {
+            "username" : user,
+            "lat" : lat,
+            "lng" : lng,
+            "name" : $scope.name,
+            "category" : $scope.category,
+            "description" : $scope.description,
+            "imgdata" : $scope.imgdata
+        };
+
+        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/add_marker.php", data).
+            success(function(data, status){
+                console.log("Success!");
+                alert(data);
+            }).
+            error(function(data, status){
+                console.log("Error");
+                console.log(data || "No data returned." );
+                console.log(status);
+                alert(data);
+            });
+
+
+
+
+        /*
+
         $scope.markers['marker0001'] = {
             lat: lat,
             lng: lng,
             name: $scope.name,
             description: $scope.description,
             category: $scope.category,
-            user: $scope.user,
+            user: user,
             icon: L.icon({
                 iconUrl: 'Content/img/' + $scope.pincolor,
                 iconSize: [38,55],
@@ -75,7 +106,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             }),
             focus: true,
             draggable: false
-        };
+        }; */
     };
 
     $scope.closeMark = function() {
@@ -164,8 +195,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         //smallImage.style.display = 'block';
 
         //smallImage.src = "data:image/jpeg;base64," + imageData;
-
-        $scope.saveImage(imageData);
+        $scope.imgdata = imageData;
+        //$scope.saveImage(imageData);
     }
 
     function onPhotoURISuccess(imageURI) {

@@ -84,9 +84,4 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
 
-    // START
-
-
-
-    //END
 }

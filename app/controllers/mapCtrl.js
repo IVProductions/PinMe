@@ -15,7 +15,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.category = "Choose a category";
     $scope.name = "";
     $scope.description = "";
-    $scope.user = "";
+    $scope.user = stateService.functions.getCurrentUser();
     $scope.markimageurl = "Content/img/basket.png";
     $scope.imgdata = "";
 
@@ -65,7 +65,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
     $scope.addMarker = function() {
         // send data to server
-
         var data = {
             "username" : user,
             "lat" : lat,
@@ -76,9 +75,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             "imgdata" : $scope.imgdata
         };
 
-        console.log(data.username);
-        /*
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
+        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/add_marker.php", data).
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
@@ -93,7 +90,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
 
 
-
+        /*
 
         $scope.markers['marker0001'] = {
             lat: lat,

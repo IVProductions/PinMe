@@ -56,41 +56,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             });
     }
 
-    $scope.getImage = function(username) {
 
-        var data = {
-            "username" : username
-        }
-
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_image.php", data).
-            success(function(data, status){
-                console.log("Fagg" + data);
-                var smallImage = document.getElementById('smallImage');
-                smallImage.style.display = 'block';
-                smallImage.src = data;
-            }).
-            error(function(data, status){
-                console.log("Error");
-                console.log(data || "No data returned." );
-                console.log(status);
-                alert(data);
-            });
-    }
-
-    $scope.saveImage = function(imageData) {
-
-        var data = {
-            "imageData" : imageData
-        }
-
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/save_image.php", data).
-            success(function(data, status){
-                alert(data);
-            }).
-            error(function(data, status){
-                alert("Failed to Save Image");
-            });
-    }
 
 
     function onSuccess (position) {
@@ -126,35 +92,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
 
 
-    function onPhotoDataSuccess(imageData) {
-        // Uncomment to view the base64-encoded image data
 
-        //var smallImage = document.getElementById('smallImage');
-
-        //smallImage.style.display = 'block';
-
-        //smallImage.src = "data:image/jpeg;base64," + imageData;
-
-        $scope.saveImage(imageData);
-    }
-
-    function onPhotoURISuccess(imageURI) {
-        // Uncomment to view the image file URI
-        // console.log(imageURI);
-
-        // Get image handle
-        //
-        var largeImage = document.getElementById('largeImage');
-
-        // Unhide image elements
-        //
-        largeImage.style.display = 'block';
-
-        // Show the captured photo
-        // The inline CSS rules are used to resize the image
-        //
-        largeImage.src = imageURI;
-    }
 
     function onFail(message) {
         alert('Failed because: ' + message);

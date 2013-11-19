@@ -1,28 +1,30 @@
 <div class="login">
-    <div class="row">
-        <h2>PinMe</h2>
+    <div class="row loginheader">
+        <h2><strong class="pin">Pin</strong><strong>it</strong></h2>
     </div>
-    <div class="row">
+    <div class="inputlogin">
+        <div class="row">
         <div class="col-xs-12 col-sm-12">
             <input ng-model="user.name" type="text" placeholder="Enter Preferred Username"/>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12">
-            <input ng-model="user.password" type="password" placeholder="Enter Password"/>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-12">
-            <input ng-model="user.confirmPassword"type="password" placeholder="Re-enter Password"/>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <input ng-model="user.password" type="password" placeholder="Enter Password"/>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-sm-6">
-            <button class="btn btn-success" ng-click="create_user(user.name, user.password)">Create User</button>
-            <button class="btn btn-danger" ng-click="redirect('/')">Back</button>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <input ng-model="user.confirmPassword"type="password" placeholder="Re-enter Password"/>
+            </div>
         </div>
-        <div class="col-xs-6 col-sm-6">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <button class="btn btn-success" ng-click="create_user(user.name, user.password)">Create User</button>
+            </div>
         </div>
+     </div>
+    <div class="col-xs-12 col-sm-12 newuser">
+        <button class="btn btn-primary" ng-click="redirect('/')">Back</button>
     </div>
 </div>

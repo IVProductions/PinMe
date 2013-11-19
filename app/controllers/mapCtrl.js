@@ -219,6 +219,19 @@ function mapCtrl($scope, stateService, markerFactory){
             });
     }
 
+    var pictureSource;   // picture source
+    var destinationType; // sets the format of returned value
+    document.addEventListener("deviceready",onDeviceReady,false);
+
+    function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+
+    function onFail(message) {
+        alert('Failed because: ' + message);
+    }
+
      $scope.redirect = function(path) {
          $location.path(path);
      }

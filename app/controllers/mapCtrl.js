@@ -48,7 +48,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             $scope.user = marker.username;
             $scope.imglink = marker.imglink;
 
-          //  $scope.setCategoryColor($scope.category);
+            $scope.setCategoryColor($scope.category);
         }
     });
     $scope.$on('leafletDirectiveMarker.popupopen', function(e, args) {
@@ -89,26 +89,19 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
                 alert(data);
             });
 
-
-
-
-        /*
-
-        $scope.markers['marker0001'] = {
-            lat: lat,
-            lng: lng,
-            name: $scope.name,
-            description: $scope.description,
-            category: $scope.category,
-            user: user,
-            icon: L.icon({
-                iconUrl: 'Content/img/' + $scope.pincolor,
-                iconSize: [38,55],
-                iconAnchor: [18,55]
-            }),
-            focus: true,
-            draggable: false
-        }; */
+        angular.extend($scope, {
+            dragging: false,
+            center: {
+                lat: lat,
+                lng: lng,
+                zoom: 16
+            },
+            markers: markerFactory.markers,
+            defaults: {
+                tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
+                scrollWheelZoom: false
+            }
+        });
     };
 
     $scope.closeMark = function() {

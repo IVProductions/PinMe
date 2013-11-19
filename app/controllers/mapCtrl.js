@@ -2,7 +2,10 @@ function mapCtrl($scope, $http, stateService, markerFactory){
     $("#map").css({'height': window.innerHeight});
 
     var lat = stateService.functions.getLatitude();
-    var lng = stateService.functions.getLongitude();
+    var lng = stateService.functions.getLongitude()
+
+    var pictureSource = navigator.camera.PictureSourceType;   // picture source
+    var destinationType = navigator.camera.DestinationType; // sets the format of returned value
 
     $scope.newMark = false;
     $scope.mark = false;
@@ -217,15 +220,6 @@ function mapCtrl($scope, $http, stateService, markerFactory){
             error(function(data, status){
                 alert("Failed to Save Image");
             });
-    }
-
-    var pictureSource;   // picture source
-    var destinationType; // sets the format of returned value
-    document.addEventListener("deviceready",onDeviceReady,false);
-
-    function onDeviceReady() {
-        pictureSource=navigator.camera.PictureSourceType;
-        destinationType=navigator.camera.DestinationType;
     }
 
     function onFail(message) {

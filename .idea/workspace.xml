@@ -84,7 +84,7 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="66" selection-start="873" selection-end="881" vertical-scroll-proportion="-10.166667">
+            <state line="19" column="66" selection-start="873" selection-end="881" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -102,7 +102,7 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+            <state line="10" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.21337126">
               <folding />
             </state>
           </provider>
@@ -597,6 +597,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="66" selection-start="873" selection-end="881" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="0" selection-start="2333" selection-end="2333" vertical-scroll-proportion="-47.884617">
@@ -604,16 +611,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="66" selection-start="873" selection-end="881" vertical-scroll-proportion="-10.166667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+        <state line="10" column="21" selection-start="446" selection-end="446" vertical-scroll-proportion="0.21337126">
           <folding />
         </state>
       </provider>

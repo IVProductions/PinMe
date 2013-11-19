@@ -16,29 +16,71 @@
         ></leaflet>
     </div>
     <div id="header">
+        {{ judas }}
         <h2 id="title"><strong class="pin">Pin</strong><strong class="it">it</strong></h2>
-        <button class="btn btn-default" ng-click="$spMenu.toggle()">Menu</button>
+        <button class="btn btn-default" ng-show="!mark" ng-click="$spMenu.toggle()">Menu</button>
     </div>
     <button class="btn btn-success" ng-click="newMark = true;" id="newPin">Pin</button>
 
     <div id="newMarker" ng-show="newMark">
-        <button class="btn btn-primary save" ng-click="newMark = false">Back To Map</button>
-        <div class="row">
+        <button class="btn btn-default closeit" ng-click="newMark = false">Close</button>
+        <div class="row firstinput">
             <div class="col-xs-12 col-sm-12">
-                <input type="text" placeholder="Name"/>
+                <input type="text" placeholder="Name" ng-model="name"/>
+            </div>
+        </div>
+        <button class="dropdown-toggle btn btn-default">
+            {{ category }}
+        </button>
+        <div class="dropdown-menu">
+            <div class="row">
+                <button class="btn cat1" ng-click="setCategory(1)">Recreational</button>
+            </div>
+            <div class="row">
+                <button class="btn cat2" ng-click="setCategory(2)">Dining</button>
+            </div>
+            <div class="row">
+                <button class="btn cat3" ng-click="setCategory(3)">Entertainment</button>
+            </div>
+            <div class="row">
+                <button class="btn cat4" ng-click="setCategory(4)">Educational</button>
+            </div>
+            <div class="row">
+                <button class="btn cat5" ng-click="setCategory(5)">Attraction</button>
+            </div>
+            <div class="row">
+                <button class="btn cat6" ng-click="setCategory(6)">Shops</button>
+            </div>
+            <div class="row">
+                <button class="btn cat7" ng-click="setCategory(7)">Others</button>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-12">
-                <input type="text" placeholder="Tags"/>
+                <textarea class="description" placeholder="Description" ng-model="description"></textarea>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12">
-                <textarea class="description" placeholder="Description"></textarea>
-            </div>
-        </div>
+        <button class="btn btn-default img">Upload Picture</button>
         <button class="btn btn-success save" ng-click="newMark = false; addMarker()">Save</button>
+    </div>
+
+    <div id="mark" ng-show="mark">
+        <div class="row">
+            <button class="btn btn-default exit" ng-click="closeMark()">Close</button>
+        </div>
+        <div class="row">
+           <p id="marktitle"><strong>{{ name }}</strong></p>
+           <p id="markuser">by {{ user }}</p>
+        </div>
+        <div class="row">
+            <p id="markcategory"> {{ category }} </p>
+        </div>
+        <div class="row">
+            <img id="markimage" ng-src="{{markimageurl}}"/>
+        </div>
+        <div class="row">
+            <p id="markdescription"> {{ description }} </p>
+        </div>
     </div>
 </div>
 

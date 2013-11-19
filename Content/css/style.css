@@ -130,6 +130,7 @@ body {
     background-color: white;
 }
 
+
 #newMarker {
     position: absolute;
     top: 0;
@@ -138,6 +139,20 @@ body {
     background-color: white;
     text-align: center;
     padding: 20px;
+}
+
+#mark {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#newMarker .firstinput {
+    margin-top: 50px;
 }
 
 #newMarker textarea,
@@ -150,12 +165,124 @@ body {
     padding-left: 10px;
 }
 
+#newMarker .dropdown-toggle {
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.dropdown-menu button {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 40px;
+}
+
+
+
+#newMarker
 .description {
     height: 80px!important;
     padding-top: 10px;
 }
 
+.img,
 .save {
     width: 100%;
     margin-bottom: 10px;
+    height: 40px;
 }
+
+#marktitle {
+    font-size: 20px;
+    color: royalblue;
+    margin: 0;
+    padding-left: 10px;
+}
+
+#markuser {
+    margin: 0;
+    padding-left: 10px;
+}
+
+#markdescription {
+    margin: 0;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#markimage {
+    width: 100%;
+}
+
+#markcategory {
+    margin: 0;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.closeit {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.exit {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.moreinfo {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* Categories */
+
+.cat1 {
+    background-color: rgb(255,122,122);
+    color: #333;
+    border-color: #ccc;
+}
+.cat2 {
+    background-color: rgb(195,122,255);
+    color: #333;
+    border-color: #ccc;
+}
+.cat3 {
+    background-color: rgb(122,131,255);
+    color: #333;
+    border-color: #ccc;
+}
+.cat4 {
+    background-color: rgb(122,255,162);
+    color: #333;
+    border-color: #ccc;
+}
+.cat5 {
+    background-color: rgb(204,255,122);
+    color: #333;
+    border-color: #ccc;
+}
+.cat6 {
+    background-color: rgb(255,209,122);
+    color: #333;
+    border-color: #ccc;
+}
+.cat7 {
+    background-color: rgb(176,176,176);
+    color: #333;
+    border-color: #ccc;
+}
+
+

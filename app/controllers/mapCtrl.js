@@ -1,4 +1,4 @@
-function mapCtrl($scope, $http, stateService, markerFactory){
+function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $("#map").css({'height': window.innerHeight});
 
     var lat = stateService.functions.getLatitude();
@@ -217,12 +217,16 @@ function mapCtrl($scope, $http, stateService, markerFactory){
 
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/save_image.php", data).
             success(function(data, status){
-                alert(data);
-                $(".img").button('reset');
+                setTimeout(function() {
+                    $(".img").button('reset');
+                    alert(data);
+                }, 0);
             }).
             error(function(data, status){
-                alert("Failed to Save Image");
-                $(".img").button('reset');
+                setTimeout(function() {
+                    alert("Failed to Save Image");
+                    $(".img").button('reset');
+                }, 0);
             });
     }
 

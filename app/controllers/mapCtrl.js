@@ -209,7 +209,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
     $scope.saveImage = function(imageData) {
 
-        $(".img").button('loading');
 
         var data = {
             "imageData" : imageData
@@ -218,14 +217,12 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/save_image.php", data).
             success(function(data, status){
                 setTimeout(function() {
-                    $(".img").button('reset');
                     alert(data);
                 }, 0);
             }).
             error(function(data, status){
                 setTimeout(function() {
                     alert("Failed to Save Image");
-                    $(".img").button('reset');
                 }, 0);
             });
     }

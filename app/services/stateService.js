@@ -1,6 +1,6 @@
 PinMe.factory("stateService", function () {
-    var latitude = 40.095;
-    var longitude = -3.823;
+    var latitude = 34.415;
+    var longitude = -119.85;
 
     var currentUser = "";
 

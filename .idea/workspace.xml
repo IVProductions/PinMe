@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/login.html" afterPath="$PROJECT_DIR$/app/partials/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ShareThis.iws" />
@@ -93,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="61" selection-start="296" selection-end="296" vertical-scroll-proportion="-4.375">
+            <state line="21" column="8" selection-start="759" selection-end="759" vertical-scroll-proportion="0.39923954">
               <folding />
             </state>
           </provider>
@@ -111,10 +110,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="25" selection-start="6056" selection-end="6056" vertical-scroll-proportion="3.2401524">
+            <state line="170" column="25" selection-start="6056" selection-end="6056" vertical-scroll-proportion="-98.07692">
               <folding />
             </state>
           </provider>
@@ -153,7 +152,6 @@
         <option value="$PROJECT_DIR$/Scripts/angular-leaflet-directive.js" />
         <option value="$PROJECT_DIR$/app/services/service.js" />
         <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
@@ -163,6 +161,7 @@
         <option value="$PROJECT_DIR$/app/partials/map.html" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
         <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/app/partials/login.html" />
       </list>
     </option>
   </component>
@@ -663,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="61" selection-start="296" selection-end="296" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-22.5">
@@ -696,7 +688,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="25" selection-start="6056" selection-end="6056" vertical-scroll-proportion="3.2401524">
+        <state line="170" column="25" selection-start="6056" selection-end="6056" vertical-scroll-proportion="-98.07692">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="759" selection-end="759" vertical-scroll-proportion="0.39923954">
           <folding />
         </state>
       </provider>

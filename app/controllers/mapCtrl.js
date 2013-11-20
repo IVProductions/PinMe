@@ -206,23 +206,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         //$scope.saveImage(imageData);
     }
 
-    function onPhotoURISuccess(imageURI) {
-        // Uncomment to view the image file URI
-        // console.log(imageURI);
-
-        // Get image handle
-        //
-        var largeImage = document.getElementById('largeImage');
-
-        // Unhide image elements
-        //
-        largeImage.style.display = 'block';
-
-        // Show the captured photo
-        // The inline CSS rules are used to resize the image
-        //
-        largeImage.src = imageURI;
-    }
 
     $scope.getImage = function(username) {
 
@@ -268,6 +251,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     function onFail(message) {
         alert("Camera Error!");
     }
+
 
      $scope.redirect = function(path) {
          $location.path(path);

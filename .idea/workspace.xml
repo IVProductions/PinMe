@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="" />
+    <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+    </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,7 +29,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="885">
+            <state line="11" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -35,7 +38,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="4590">
+            <state line="32" column="23" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="5310">
               <folding />
             </state>
           </provider>
@@ -44,25 +47,25 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="74" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="405">
+            <state line="1" column="74" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="18" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1620">
+            <state line="4" column="10" selection-start="196" selection-end="196" vertical-scroll-proportion="0.10084034" vertical-offset="0" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="loginCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="2338" selection-end="2338" vertical-scroll-proportion="1.9420784" vertical-offset="0" max-vertical-offset="1380">
+            <state line="17" column="14" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -80,7 +83,7 @@
       <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="84" selection-start="1029" selection-end="1029" vertical-scroll-proportion="-11.125" vertical-offset="63" max-vertical-offset="720">
+            <state line="22" column="84" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
@@ -89,7 +92,7 @@
       <file leaf-file-name="cordova.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/cordova.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4819" column="21" selection-start="184121" selection-end="184121" vertical-scroll-proportion="0.0" vertical-offset="72285" max-vertical-offset="98865">
+            <state line="4819" column="21" selection-start="184121" selection-end="184121" vertical-scroll-proportion="0.0" vertical-offset="72285" max-vertical-offset="98880">
               <folding />
             </state>
           </provider>
@@ -98,7 +101,7 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="266" column="6" selection-start="8869" selection-end="8869" vertical-scroll-proportion="0.0" vertical-offset="1213" max-vertical-offset="4425">
+            <state line="16" column="28" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4290">
               <folding />
             </state>
           </provider>
@@ -141,12 +144,12 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
-        <option value="$PROJECT_DIR$/app/partials/map.html" />
         <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/app/partials/newuser.html" />
-        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
+        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/app/partials/map.html" />
       </list>
     </option>
   </component>
@@ -197,7 +200,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -350,21 +352,30 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UCSB Classes/CMPSC290B Software Systems/MovieShare/MovieShare" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/UCSB Classes/CMPSC290B Software Systems/MovieShare/MovieShare" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.Unnamed">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -375,23 +386,15 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -445,7 +448,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24791667" sideWeight="0.89985895" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10014104" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10014104" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -538,23 +541,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="18" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="84" selection-start="1029" selection-end="1029" vertical-scroll-proportion="-11.125" vertical-offset="63" max-vertical-offset="720">
+        <state line="22" column="84" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
@@ -566,6 +555,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="14" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="3" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="338" selection-end="338" vertical-scroll-proportion="-5.0" vertical-offset="0" max-vertical-offset="540">
@@ -573,16 +583,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="6" selection-start="8869" selection-end="8869" vertical-scroll-proportion="0.0" vertical-offset="1213" max-vertical-offset="4425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2338" selection-end="2338" vertical-scroll-proportion="1.9420784" vertical-offset="0" max-vertical-offset="1380">
+        <state line="4" column="10" selection-start="196" selection-end="196" vertical-scroll-proportion="0.10084034" vertical-offset="0" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>

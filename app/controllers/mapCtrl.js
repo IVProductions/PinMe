@@ -184,6 +184,12 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         }
     }
 
+    document.body.addEventListener('touchmove',blockTouchMove,false);
+
+    function blockTouchMove(event) {
+        // Prevent scrolling on this element
+        event.preventDefault();
+    }
     $scope.findMarker = function(marker){
         $scope.center.lat = parseFloat(marker.lat);
         $scope.center.lng = parseFloat(marker.lng);

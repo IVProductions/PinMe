@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -106,18 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mapCtrl.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="49" selection-start="6481" selection-end="6481" vertical-scroll-proportion="-8.727273">
-              <folding>
-                <marker date="1384926183000" expanded="true" signature="7096:7599" placeholder="{...}" />
-                <marker date="1384926183000" expanded="true" signature="7886:8490" placeholder="{...}" />
-                <marker date="1384926183000" expanded="true" signature="8529:8568" placeholder="{...}" />
-                <marker date="1384926183000" expanded="true" signature="8546:8571" placeholder="{...}" />
-                <marker date="1384926183000" expanded="true" signature="8428:8453" placeholder="{...}" />
-                <marker date="1384926183000" expanded="true" signature="8516:8549" placeholder="{...}" />
-              </folding>
+            <state line="191" column="0" selection-start="6674" selection-end="6674" vertical-scroll-proportion="0.7915567">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,10 +155,10 @@
         <option value="$PROJECT_DIR$/Content/css/style.css" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
-        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
         <option value="$PROJECT_DIR$/app/services/stateService.js" />
         <option value="$PROJECT_DIR$/app/directives/mapDirective.js" />
         <option value="$PROJECT_DIR$/app/partials/map.html" />
+        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       </list>
     </option>
   </component>
@@ -672,20 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="49" selection-start="6481" selection-end="6481" vertical-scroll-proportion="-8.727273">
-          <folding>
-            <marker date="1384926183000" expanded="true" signature="7096:7599" placeholder="{...}" />
-            <marker date="1384926183000" expanded="true" signature="7886:8490" placeholder="{...}" />
-            <marker date="1384926183000" expanded="true" signature="8529:8568" placeholder="{...}" />
-            <marker date="1384926183000" expanded="true" signature="8546:8571" placeholder="{...}" />
-            <marker date="1384926183000" expanded="true" signature="8428:8453" placeholder="{...}" />
-            <marker date="1384926183000" expanded="true" signature="8516:8549" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="30" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
@@ -702,7 +682,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="0" selection-start="6674" selection-end="6674" vertical-scroll-proportion="0.7915567">
           <folding />
         </state>
       </provider>

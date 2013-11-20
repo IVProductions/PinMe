@@ -87,7 +87,7 @@ body {
     margin-left: 20px;
     margin-bottom: 20px;
     border: 1px solid lightgrey;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 5px;
     height: 40px;
     padding-left: 10px;
@@ -130,6 +130,29 @@ body {
     margin-bottom: 20px;
 }
 
+.minus {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 27px;
+}
+
+.centerrad {
+    padding-top: 8px;
+    padding-left: 24px;
+}
+
+.plus {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    font-size: 27px;
+}
+
 .slider-handle {
     margin-left: -15px!important;
     height: 35px!important;
@@ -145,9 +168,8 @@ body {
 #sp-nav {
     overflow-y: auto;
     overflow-x: hidden;
-    width: inherit;
 }
-body, html { overflow-x: hidden; width: inherit; }
+
 .searchlist {
     margin: 5px;
 }

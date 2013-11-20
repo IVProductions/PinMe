@@ -280,6 +280,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
     $scope.update = function(){
         $scope.category = "Choose a category";
+        $scope.setCategoryColor($scope.category);
         $scope.markers = stateService.functions.getAllMarkers();
     };
 

@@ -26,7 +26,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             lng: lng,
             zoom: 16
         },
-        markers: markerFactory.markers,
+        markers: stateService.functions.getAllMarkers(),
         defaults: {
             tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
             scrollWheelZoom: false
@@ -45,6 +45,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             $scope.name = marker.name;
             $scope.category = marker.category;
             $scope.description = marker.description;
+            $scope.user = marker.username;
+            $scope.imglink = marker.imglink;
 
             $scope.setCategoryColor($scope.category);
         }
@@ -79,6 +81,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
+                $scope.markers = stateService.functions.getAllMarkers();
             }).
             error(function(data, status){
                 console.log("Error");
@@ -86,9 +89,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
                 console.log(status);
                 alert(data);
             });
-
-
-
 
         /*
 

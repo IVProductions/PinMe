@@ -42,7 +42,7 @@ PinMe.factory("stateService", function ($http) {
     };
 
     functions.getAllMarkers = function(){
-
+             console.log("yolo");
         markers['me'] = {
             lat: latitude,
             lng: longitude,

@@ -169,7 +169,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
 
         $scope.name = "";
-        $scope.category = "";
+        $scope.category = "Choose a category";
         $scope.description = "";
         $scope.user = "";
         $scope.imglink = "";
@@ -279,8 +279,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     };
 
     $scope.update = function(){
-        $scope.markers = stateService.functions.getAllMarkers();
         $scope.category = "Choose a category";
+        $scope.markers = stateService.functions.getAllMarkers();
     };
 
     $scope.capturePhoto = function() {

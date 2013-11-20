@@ -10,12 +10,8 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
         confPassword:""
     }
 
-    $scope.passwordMatches = function(password, confPassword) {
-        return password==confPassword ? true : false;
-    }
-
     $scope.create_user = function(username, password, confPassword) {
-        if ($scope.passwordMatches(password, confPassword)) {
+        if (password==confPassword) {
             var data = {
                 "username" : username,
 			    "password" : password

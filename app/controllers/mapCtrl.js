@@ -34,6 +34,57 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             scrollWheelZoom: false
         }
     });
+    $scope.chosenCat = "All";
+    $scope.setChosenCat = function(i) {
+        switch(i)
+        {
+            case 1:
+                $scope.chosenCat = "Recreational";
+                $(".dropdown-toggle").css("background-color","rgb(255,122,122)");
+                $(".dropdown-toggle").html("Recreational");
+                break;
+            case 2:
+                $scope.chosenCat = "Dining";
+                $(".dropdown-toggle").css("background-color","rgb(195,122,255)");
+                $(".dropdown-toggle").html("Dining");
+                break;
+            case 3:
+                $scope.chosenCat = "Entertainment";
+                $(".dropdown-toggle").css("background-color","rgb(122,131,255)");
+                $(".dropdown-toggle").html("Entertainment");
+                break;
+            case 4:
+                $scope.chosenCat = "Educational";
+                $(".dropdown-toggle").css("background-color","rgb(122,255,162)");
+                $(".dropdown-toggle").html("Educational");
+                break;
+            case 5:
+                $scope.chosenCat = "Attraction";
+                $(".dropdown-toggle").css("background-color","rgb(204,255,122)");
+                $(".dropdown-toggle").html("Attraction");
+                break;
+            case 6:
+                $scope.chosenCat = "Shops";
+                $(".dropdown-toggle").css("background-color","rgb(255,209,122)");
+                $(".dropdown-toggle").html("Shops");
+                break;
+            case 7:
+                $scope.chosenCat = "Others";
+                $(".dropdown-toggle").css("background-color","rgb(176,176,176)");
+                $(".dropdown-toggle").html("Others");
+                break;
+            case 8:
+                $scope.chosenCat = "All";
+                $(".dropdown-toggle").css("background-color","white");
+                $(".dropdown-toggle").html("Choose a category");
+                break;
+            default:
+                $scope.chosenCat = "All";
+                $(".dropdown-toggle").css("background-color","white");
+                $(".dropdown-toggle").html("Choose a category");
+        }
+        console.log($scope.chosenCat);
+    };
 
 
     $scope.$on('leafletDirectiveMarker.click', function(e, args) {
@@ -115,7 +166,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.closeMark = function() {
         $scope.mark = false;
         $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","visible");
-    }
+    };
 
     $scope.setCategory = function(i) {
         switch(i)
@@ -195,15 +246,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     };
 
     function onPhotoDataSuccess(imageData) {
-        // Uncomment to view the base64-encoded image data
-
-        //var smallImage = document.getElementById('smallImage');
-
-        //smallImage.style.display = 'block';
-
-        //smallImage.src = "data:image/jpeg;base64," + imageData;
         $scope.imgdata = imageData;
-        //$scope.saveImage(imageData);
     }
 
 

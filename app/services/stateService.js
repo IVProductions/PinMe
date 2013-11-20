@@ -2,6 +2,8 @@ PinMe.factory("stateService", function ($http) {
     var latitude = 34.415;
     var longitude = -119.85;
 
+    var radius = 10;
+
     var currentUser = "";
     var markers = {};
     var lastMarker = {};
@@ -31,6 +33,14 @@ PinMe.factory("stateService", function ($http) {
         return currentUser;
     };
 
+    functions.getRadius = function(){
+        return radius;
+    };
+
+    functions.setRadius = function(rad){
+        radius = rad;
+    };
+
     functions.getAllMarkers = function(){
 
         markers['me'] = {
@@ -47,13 +57,15 @@ PinMe.factory("stateService", function ($http) {
         };
 
         var data = {
-            "dummy" : "dummy"
+            "radius" : radius,
+            "lat" : latitude,
+            "lng" : longitude
         };
 
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
             success(function(data, status){
                 var json = JSON.parse(JSON.stringify(eval(data)));
-                //alert(json.locations[0].username);
+                alert(json.locations[0].distance);
 
                 var num_of_locations = json.locations.length;
 
@@ -62,6 +74,7 @@ PinMe.factory("stateService", function ($http) {
                     var category = json.locations[i].category;
                     var lat = json.locations[i].lat;
                     var lng = json.locations[i].lng;
+                    var distance = json.locations[i].distance;
                     var markerName = json.locations[i].markerName;
                     var description = json.locations[i].description;
                     var imglink = json.locations[i].image_link;

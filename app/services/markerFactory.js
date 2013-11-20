@@ -65,7 +65,7 @@ PinMe.factory("markerFactory", function (stateService, $http) {
                     name: markerName,
                     description: description,
                     category: category,
-                    user: username,
+                    username: username,
                     imglink: imglink,
                     icon: L.icon({
                         iconUrl: 'Content/img/' + pincolor,
@@ -74,23 +74,6 @@ PinMe.factory("markerFactory", function (stateService, $http) {
                     })
                 }
             }
-
-            //alert(data);
-            //console.log(data);
-            /*
-            lat: lat,
-                lng: lng,
-                name: $scope.name,
-                description: $scope.description,
-                category: $scope.category,
-                user: user,
-                icon: L.icon({
-                iconUrl: 'Content/img/' + $scope.pincolor,
-                iconSize: [38,55],
-                iconAnchor: [18,55]
-            }),
-                focus: true,
-                draggable: false */
         }).
         error(function(data, status){
             console.log("Error");

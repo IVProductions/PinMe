@@ -26,7 +26,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             lng: lng,
             zoom: 16
         },
-        markers: markerFactory.markers,
+        markers: stateService.functions.getAllMarkers(),
         defaults: {
             tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
             scrollWheelZoom: false
@@ -96,12 +96,31 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
                 lng: lng,
                 zoom: 16
             },
-            markers: markerFactory.markers,
+            markers: stateService.functions.getAllMarkers(),
             defaults: {
                 tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
                 scrollWheelZoom: false
             }
         });
+
+
+        /*
+
+        $scope.markers['marker0001'] = {
+            lat: lat,
+            lng: lng,
+            name: $scope.name,
+            description: $scope.description,
+            category: $scope.category,
+            user: user,
+            icon: L.icon({
+                iconUrl: 'Content/img/' + $scope.pincolor,
+                iconSize: [38,55],
+                iconAnchor: [18,55]
+            }),
+            focus: true,
+            draggable: false
+        }; */
     };
 
     $scope.closeMark = function() {

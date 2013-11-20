@@ -253,13 +253,13 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             }).
             error(function(data, status){
                 setTimeout(function() {
-                    alert("Failed to Save Image");
+                    alert("Failed to Save Image.");
                 }, 0);
             });
     }
 
     function onFail(message) {
-        alert('Failed because: ' + message);
+        alert("Camera Error!");
     }
 
      $scope.redirect = function(path) {
@@ -276,18 +276,13 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         console.log("onsuccess");
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
-        console.log("New lat: "+latitude);
-        console.log("New long: "+longitude);
-        alert("New! " + latitude +" "+longitude);
         stateService.functions.setLatitude(latitude);
         stateService.functions.setLongitude(longitude);
 
     }
 
     function onError(error) {
-        console.log("hei"+error);
-        alert('code: '    + error.code    + '\n' +
-            'message: ' + error.message + '\n');
+        alert("Failed to Get Your Current Location.");
     }
 
     $scope.start_geolocation_timeout();

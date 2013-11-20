@@ -19,15 +19,12 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
             success(function(data, status){
                 console.log("Success!");
-                alert(data);
+                alert(data+" Created!");
                 stateService.functions.setCurrentUser(username);
                 $scope.redirect('login');
             }).
             error(function(data, status){
-                console.log("Error");
-                console.log(data || "No data returned." );
-                console.log(status);
-                alert(data);
+                console.log("User Create Error");
             });
     };
 
@@ -42,21 +39,18 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             success(function(data, status){
                 console.log("Success!");
                 console.log(data);
-                alert("Number of rows matching query: " + data);
                 stateService.functions.setCurrentUser(username);
                 if (data == true) {
                     $scope.redirect('login');
                 }
                 else {
                     $scope.redirect('/');
+                    alert("Invalid Username/Password Combination.")
                 }
 
             }).
             error(function(data, status){
-                console.log("Error");
-                console.log(data || "No data returned." );
-                console.log(status);
-                alert(data);
+                alert("Login Failed. Check Internet Connection.")
             });
     }
 
@@ -74,9 +68,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
     }
 
     function onError(error) {
-        console.log("hei"+error);
-        alert('code: '    + error.code    + '\n' +
-            'message: ' + error.message + '\n');
+        alert("Failed to Get Your Current Location.");
     }
 
     navigator.geolocation.getCurrentPosition(onSuccess, onError);

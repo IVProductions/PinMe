@@ -7,9 +7,18 @@
         <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle(); update();">Back To Map</button>
     </div>
     <div class="row">
-        <div class="slidercontainer col-xs-12 col-sm-12">
-            <strong id="radius"> {{ radius }} km </strong>  radius
-            <slider model="radius" type="text" class="span2 slider" data-slider-min="5" data-slider-max="30" data-slider-step="1"  data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide"></slider>
+       <p style="text-align: center;">radius</p>
+    </div>
+    <div class="row">
+        <div class="col-xs-4 col-sm-4">
+            <button class="btn-primary btn minus" ng-click="changeRadius(false);">-</button>
+        </div>
+        <div class="centerrad col-xs-4 col-sm-4">
+            <strong id="radius" style="padding-top: 10px;"> {{ radius }} km </strong>
+            <!--<slider model="radius" type="text" class="span2 slider" data-slider-min="5" data-slider-max="30" data-slider-step="1"  data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide"></slider>   -->
+        </div>
+        <div class="col-xs-4 col-sm-4">
+            <button class="btn-primary btn plus" ng-click="changeRadius(true);">+</button>
         </div>
     </div>
     <div class="row">

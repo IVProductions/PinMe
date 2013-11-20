@@ -115,7 +115,28 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.closeMark = function() {
         $scope.mark = false;
         $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","visible");
-    }
+
+        $scope.name = "";
+        $scope.category = "";
+        $scope.description = "";
+        $scope.user = "";
+        $scope.imglink = "";
+
+        $scope.setCategoryColor($scope.category);
+    };
+
+    $scope.changeRadius = function(up){
+        if(up){
+            $scope.radius += 5;
+            stateService.functions.setRadius($scope.radius);
+        }
+        else {
+            if($scope.radius != 5){
+                $scope.radius -= 5;
+                stateService.functions.setRadius($scope.radius);
+            }
+        }
+    };
 
     $scope.setCategory = function(i) {
         switch(i)
@@ -157,6 +178,9 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
                 break;
             default:
                 $scope.category = "Choose a category";
+                $scope.pincolor = "greypin.png";
+                $(".dropdown-toggle").css("background-color","#fff");
+                $(".dropdown-toggle").css("border-color","#ccc");
         }
     };
 

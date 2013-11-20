@@ -130,6 +130,12 @@ body {
     margin-bottom: 20px;
 }
 
+.slider-handle {
+    margin-left: -15px!important;
+    height: 35px!important;
+    width: 35px!important;
+}
+
 #searchResults button {
     width: 100%;
     margin-bottom: 10px;

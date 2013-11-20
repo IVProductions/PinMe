@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="" />
+    <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
+    </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384841663738" ignored="false" />
     <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384925571439" ignored="false" />
     <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384926653081" ignored="false" />
-    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384922949531" ignored="false" />
+    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384927681280" ignored="false" />
     <file path="/stateService.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384924600736" ignored="false" />
     <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384905063151" ignored="false" />
     <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384911414913" ignored="false" />
@@ -32,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="12" selection-start="2073" selection-end="2073" vertical-scroll-proportion="-12.963636">
+            <state line="132" column="0" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.48548812">
               <folding />
             </state>
           </provider>
@@ -104,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mapCtrl.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="0" selection-start="6674" selection-end="6674" vertical-scroll-proportion="0.7915567">
+            <state line="184" column="6" selection-start="6488" selection-end="6488" vertical-scroll-proportion="-9.545455">
               <folding />
             </state>
           </provider>
@@ -149,13 +152,13 @@
         <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/Content/css/style.css" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/app/services/stateService.js" />
         <option value="$PROJECT_DIR$/app/directives/mapDirective.js" />
         <option value="$PROJECT_DIR$/app/partials/map.html" />
         <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/Content/css/style.css" />
       </list>
     </option>
   </component>
@@ -621,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="12" selection-start="2073" selection-end="2073" vertical-scroll-proportion="-12.963636">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/cordova.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4819" column="21" selection-start="184121" selection-end="184121" vertical-scroll-proportion="0.0">
@@ -686,7 +682,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="0" selection-start="6674" selection-end="6674" vertical-scroll-proportion="0.7915567">
+        <state line="184" column="6" selection-start="6488" selection-end="6488" vertical-scroll-proportion="-9.545455">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="0" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.48548812">
           <folding />
         </state>
       </provider>

@@ -182,14 +182,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         else {
             $("#markcategory").css("background-color","rgb(176,176,176)");
         }
-    }
+    };
 
-    document.body.addEventListener('touchmove',blockTouchMove,false);
-
-    function blockTouchMove(event) {
-        // Prevent scrolling on this element
-        event.preventDefault();
-    }
     $scope.findMarker = function(marker){
         $scope.center.lat = parseFloat(marker.lat);
         $scope.center.lng = parseFloat(marker.lng);

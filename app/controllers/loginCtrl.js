@@ -6,26 +6,38 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
     $scope.user = {
         name:"",
-        password:""
+        password:"",
+        confPassword:""
     }
-    $scope.create_user = function(username, password) {
-        console.log(username+", " + password);
 
-        var data = {
-            "username" : username,
-			"password" : password
-        };
+    $scope.passwordMatches = function(password, confPassword) {
+        return password==confPassword ? true : false;
+    }
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
-            success(function(data, status){
-                console.log("Success!");
-                alert(data+" Created!");
-                stateService.functions.setCurrentUser(username);
-                $scope.redirect('login');
-            }).
-            error(function(data, status){
-                console.log("User Create Error");
-            });
+    $scope.create_user = function(username, password, confPassword) {
+        if ($scope.passwordMatches(password, confPassword)) {
+            var data = {
+                "username" : username,
+			    "password" : password
+            };
+
+            $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
+                success(function(data, status){
+                    console.log("Success!");
+                    if (data == "Yes") {
+                        alert("User Created!");
+                        stateService.functions.setCurrentUser(username);
+                        $scope.redirect('login');
+                    }
+                    else {
+                        alert("Username Already Taken");
+                        $scope.redirect('/');
+                    }
+                }).
+                error(function(data, status){
+                    console.log("User Create Error");
+                });
+        }
     };
 
     $scope.login = function(username, password) {

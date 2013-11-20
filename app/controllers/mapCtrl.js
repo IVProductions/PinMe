@@ -81,7 +81,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
-                $scope.markers = stateService.functions.getAllMarkers();
+                $scope.markers["temp"] = stateService.functions.getLastMarker();
             }).
             error(function(data, status){
                 console.log("Error");

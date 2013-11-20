@@ -1,7 +1,7 @@
 PinMe.factory("markerFactory", function (stateService, $http) {
 
     var markers = {};
-
+    /*
     markers['me'] = {
         lat: stateService.functions.getLatitude(),
         lng: stateService.functions.getLongitude(),
@@ -81,7 +81,7 @@ PinMe.factory("markerFactory", function (stateService, $http) {
             console.log(status);
             alert(data);
         });
-
+          */
     return {markers:markers};
 
 });

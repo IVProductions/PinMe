@@ -2,7 +2,7 @@ PinMe.factory("stateService", function ($http) {
     var latitude = 34.415;
     var longitude = -119.85;
 
-    var radius = 10;
+    var radius = 600;
 
     var currentUser = "";
     var markers = {};
@@ -64,6 +64,7 @@ PinMe.factory("stateService", function ($http) {
 
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
             success(function(data, status){
+                alert(data);
                 var json = JSON.parse(JSON.stringify(eval(data)));
                 alert(json.locations[0].distance);
 

@@ -31,12 +31,15 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
                     }
                     else {
                         alert("Username Already Taken");
-                        $scope.redirect('/');
+                        $scope.redirect('/newuser');
                     }
                 }).
                 error(function(data, status){
                     console.log("User Create Error");
                 });
+        }
+        else {
+            alert("Passwords Don't Match.")
         }
     };
 

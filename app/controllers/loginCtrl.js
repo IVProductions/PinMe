@@ -68,9 +68,6 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
 
-        alert('Latitude: '+ latitude + '\n' +'Longitude: ' + longitude + '\n');
-
-
         stateService.functions.setLatitude(latitude);
         stateService.functions.setLongitude(longitude);
 

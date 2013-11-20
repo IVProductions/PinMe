@@ -265,5 +265,31 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
      $scope.redirect = function(path) {
          $location.path(path);
      }
+
+    $scope.start_geolocation_timeout = function() {
+        setInterval(function(){
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        },40000);
+    }
+
+    function onSuccess (position) {
+        console.log("onsuccess");
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        console.log("New lat: "+latitude);
+        console.log("New long: "+longitude);
+        alert("New! " + latitude +" "+longitude);
+        stateService.functions.setLatitude(latitude);
+        stateService.functions.setLongitude(longitude);
+
+    }
+
+    function onError(error) {
+        console.log("hei"+error);
+        alert('code: '    + error.code    + '\n' +
+            'message: ' + error.message + '\n');
+    }
+
+    $scope.start_geolocation_timeout();
 }
 

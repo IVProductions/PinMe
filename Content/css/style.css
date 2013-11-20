@@ -142,6 +142,10 @@ body {
     height: 60px;
 }
 
+#sp-nav {
+    overflow-y: auto;
+}
+
 .searchlist {
     margin: 5px;
 }

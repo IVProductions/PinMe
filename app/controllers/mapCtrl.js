@@ -273,7 +273,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     }
 
     function onSuccess (position) {
-        console.log("onsuccess");
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
         stateService.functions.setLatitude(latitude);

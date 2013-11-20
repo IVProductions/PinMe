@@ -21,7 +21,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 			    "password" : password
             };
 
-            $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
+            $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/create_user.php", data).
                 success(function(data, status){
                     console.log("Success!");
                     if (data == "Yes") {
@@ -50,7 +50,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "password" : password
         }
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/login2.php", data).
+        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/login.php", data).
             success(function(data, status){
                 console.log("Success!");
                 console.log(data);
@@ -73,7 +73,6 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 
 
     function onSuccess (position) {
-        console.log("onsuccess");
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
 

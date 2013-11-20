@@ -90,7 +90,7 @@ PinMe.factory("stateService", function ($http) {
                         pincolor = "greypin.png";
                     }
 
-                    lastMarker["temp"] = {
+                    markers[''+json.locations[i].id+''] = {
                         lat: lat,
                         lng: lng,
                         name: markerName,
@@ -113,7 +113,7 @@ PinMe.factory("stateService", function ($http) {
                 alert(data);
             });
 
-        return lastMarker;
+        return markers;
     };
 
     functions.getLastMarker = function(){
@@ -127,13 +127,13 @@ PinMe.factory("stateService", function ($http) {
                 var json = JSON.parse(JSON.stringify(eval(data)));
                 //alert(json.locations[0].username);
 
-                var category = json.locations[i].category;
-                var lat = json.locations[i].lat;
-                var lng = json.locations[i].lng;
-                var markerName = json.locations[i].markerName;
-                var description = json.locations[i].description;
-                var imglink = json.locations[i].image_link;
-                var username = json.locations[i].username;
+                var category = json.location[0].category;
+                var lat = json.location[0].lat;
+                var lng = json.location[0].lng;
+                var markerName = json.location[0].markerName;
+                var description = json.location[0].description;
+                var imglink = json.location[0].image_link;
+                var username = json.location[0].username;
                 var pincolor = "greypin.png";
 
                 if(category == "Recreational"){
@@ -158,7 +158,7 @@ PinMe.factory("stateService", function ($http) {
                     pincolor = "greypin.png";
                 }
 
-                markers[''+json.locations[i].id+''] = {
+                lastMarker = {
                     lat: lat,
                     lng: lng,
                     name: markerName,
@@ -181,7 +181,7 @@ PinMe.factory("stateService", function ($http) {
                 alert(data);
             });
 
-        return markers;
+        return lastMarker;
     };
 
     return {functions: functions};

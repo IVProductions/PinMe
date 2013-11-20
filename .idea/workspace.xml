@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/stateService.js" afterPath="$PROJECT_DIR$/app/services/stateService.js" />
     </list>
     <ignored path="ShareThis.iws" />
@@ -11,7 +10,7 @@
     <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384907030252" ignored="false" />
     <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384904031589" ignored="false" />
     <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384891704237" ignored="false" />
-    <file path="/stateService.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384907406836" ignored="false" />
+    <file path="/stateService.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384907565009" ignored="false" />
     <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384905063151" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <file leaf-file-name="stateService.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="36" selection-start="3756" selection-end="3756" vertical-scroll-proportion="1.3099631">
+            <state line="160" column="48" selection-start="5357" selection-end="5357" vertical-scroll-proportion="0.44649446">
               <folding />
             </state>
           </provider>
@@ -107,7 +106,7 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="36" selection-start="2866" selection-end="2870" vertical-scroll-proportion="0.0">
+            <state line="74" column="66" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -642,14 +641,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="36" selection-start="2866" selection-end="2870" vertical-scroll-proportion="0.0">
+        <state line="74" column="66" selection-start="2528" selection-end="2528" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="36" selection-start="3756" selection-end="3756" vertical-scroll-proportion="1.3099631">
+        <state line="160" column="48" selection-start="5357" selection-end="5357" vertical-scroll-proportion="0.44649446">
           <folding />
         </state>
       </provider>

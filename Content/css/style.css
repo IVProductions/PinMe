@@ -146,7 +146,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
-
+body, html { overflow-x:hidden; }
 .searchlist {
     margin: 5px;
 }

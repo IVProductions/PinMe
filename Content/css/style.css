@@ -145,6 +145,7 @@ body {
 #sp-nav {
     overflow-y: auto;
     overflow-x: hidden;
+    width: inherit;
 }
 body, html { overflow-x: hidden; width: inherit; }
 .searchlist {

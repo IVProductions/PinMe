@@ -1,8 +1,32 @@
 <div id="sp-nav">
     <!-- put your menu in here -->
-    <input type="text" class="search" placeholder="Search"/>
-    <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle()">Back To Map</button>
-    <button class="btn btn-danger logout" ng-click="$spMenu.toggle()">Log out</button>
+    <div class="col-xs-12 col-sm-12">
+        <button class="btn btn-danger logout" ng-click="$spMenu.toggle()">Log out</button>
+    </div>
+    <div class="col-xs-12 col-sm-12">
+        <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle(); update();">Back To Map</button>
+    </div>
+    <div class="row">
+        <div class="slidercontainer col-xs-12 col-sm-12">
+            <strong id="radius"> {{ radius }} km </strong>  radius
+            <slider model="radius" type="text" class="span2 slider" data-slider-min="5" data-slider-max="30" data-slider-step="1"  data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide"></slider>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12">
+            <input type="text" ng-model="query" class="search" placeholder="Search"/>
+        </div>
+
+    </div>
+    <div class="row searchlist" ng-repeat="marker in markers | markFilter:query ">
+        <div id="searchResults" class="col-xs-12 col-sm-12">
+            <button ng-hide="marker.name == 'me'" class="btn btn-default">
+                <p id="btnMarkName"><strong>{{marker.name}}</strong></p>
+                <p id="btnMarkDesc">{{marker.description}}</p>
+                <p id="btnMarkDist">{{marker.distance.substring(0,3)}} km</p>
+            </button>
+        </div>
+    </div>
 </div>
 
 <div id="sp-page">

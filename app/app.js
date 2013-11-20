@@ -1,5 +1,5 @@
  <!-- Declare a module -->
-var PinMe = angular.module('PinMe', ['ngResource', 'leaflet-directive', 'shoppinpal.mobile-menu', 'ui.bootstrap']);
+var PinMe = angular.module('PinMe', ['ngResource', 'leaflet-directive', 'shoppinpal.mobile-menu', 'ui.bootstrap', 'filters']);
 
 <!--Routing-->
 PinMe.config(function ($routeProvider){
@@ -18,4 +18,32 @@ PinMe.config(function ($routeProvider){
         redirectTo:"/"
     })
 });
+
+ angular.module('utils', [])
+     .factory('utils', function(){
+         return{
+             compareStr: function(stra, strb){
+                 stra = ("" + stra).toLowerCase();
+                 strb = ("" + strb).toLowerCase();
+                 return stra.indexOf(strb) !== -1;
+             }
+         };
+     });
+
+ angular.module('filters',['utils'])
+     .filter('markFilter', function(utils){
+
+         return function(input, query){
+             if(!query) return input;
+             var result = [];
+
+             angular.forEach(input, function(mark){
+                 if(utils.compareStr(mark.name, query) ||
+                     utils.compareStr(mark.description, query))
+                     result.push(mark);
+             });
+             return result;
+         };
+     });
+
 

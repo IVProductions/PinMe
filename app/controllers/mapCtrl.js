@@ -81,6 +81,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
+                $scope.markers = stateService.functions.getAllMarkers();
             }).
             error(function(data, status){
                 console.log("Error");
@@ -88,21 +89,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
                 console.log(status);
                 alert(data);
             });
-
-        angular.extend($scope, {
-            dragging: false,
-            center: {
-                lat: lat,
-                lng: lng,
-                zoom: 16
-            },
-            markers: stateService.functions.getAllMarkers(),
-            defaults: {
-                tileLayer: "http://{s}.tile.opencyclemap.org/cycle/{z}/{x}/{y}.png",
-                scrollWheelZoom: false
-            }
-        });
-
 
         /*
 

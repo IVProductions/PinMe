@@ -1,7 +1,7 @@
 <div id="sp-nav">
     <!-- put your menu in here -->
     <div class="col-xs-12 col-sm-12">
-        <button class="btn btn-danger logout" ng-click="$scope.redirect('/')">Log out</button>
+        <button class="btn btn-danger logout" ng-click="redirect('/')">Log out</button>
     </div>
     <div class="col-xs-12 col-sm-12">
         <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle(); update();">Back To Map</button>
@@ -26,7 +26,7 @@
             <input type="text" ng-model="query" class="search" placeholder="Search"/>
         </div>
         <button class="backtomap dropdown-toggle btn btn-default">
-            {{ category }}k
+            {{ category }}
         </button>
         <div class="dropdown-menu">
             <div class="row">

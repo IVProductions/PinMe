@@ -280,6 +280,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
     $scope.update = function(){
         $scope.markers = stateService.functions.getAllMarkers();
+        $scope.category = "Choose a category";
     };
 
     $scope.capturePhoto = function() {

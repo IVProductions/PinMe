@@ -235,6 +235,23 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         }
     };
 
+    $scope.findMarker = function(marker){
+        $scope.center.lat = parseFloat(marker.lat);
+        $scope.center.lng = parseFloat(marker.lng);
+        $scope.center.zoom = 16;
+
+        $scope.mark = true;
+        $(".leaflet-control-zoom.leaflet-bar.leaflet-control").css("visibility","hidden");
+
+        $scope.name = marker.name;
+        $scope.category = marker.category;
+        $scope.description = marker.description;
+        $scope.user = marker.username;
+        $scope.imglink = marker.imglink;
+
+        $scope.setCategoryColor($scope.category);
+    };
+
     $scope.update = function(){
         $scope.markers = stateService.functions.getAllMarkers();
     };

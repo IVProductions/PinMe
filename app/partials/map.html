@@ -42,19 +42,19 @@
                 <button class="btn cat7" ng-click="setChosenCat(7)">Others</button>
             </div>
             <div class="row">
-                <button class="btn cat7" ng-click="setChosenCat(8)">All</button>
+                <button class="btn btn-default" ng-click="setChosenCat(8)">All</button>
             </div>
         </div>
     </div>
-    <div class="row searchlist" ng-repeat="marker in markers | markFilter:query ">
-        <div id="searchResults" class="col-xs-12 col-sm-12">
-            <button ng-hide="marker.name == 'me' || (marker.category != chosenCat && chosenCat != 'All' )" class="btn btn-default">
-                <p id="btnMarkName"><strong>{{marker.name}}</strong></p>
-                <p id="btnMarkDesc">{{marker.description}}</p>
-                <p id="btnMarkDist">{{marker.distance.substring(0,3)}} km</p>
-            </button>
+        <div class="row searchlist" ng-repeat="marker in markers | markFilter:query ">
+            <div id="searchResults" class="col-xs-12 col-sm-12">
+                <button ng-hide="marker.name == 'me' || (marker.category != chosenCat && chosenCat != 'All' )" ng-click="findMarker(marker); $spMenu.toggle();" class="btn btn-default">
+                    <p id="btnMarkName"><strong>{{marker.name}}</strong></p>
+                    <p id="btnMarkDesc">{{marker.description.substring(0,25)}}</p>
+                    <p id="btnMarkDist">{{marker.distance.substring(0,3)}} km</p>
+                </button>
+            </div>
         </div>
-    </div>
 </div>
 
 <div id="sp-page">

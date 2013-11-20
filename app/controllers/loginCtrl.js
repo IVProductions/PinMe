@@ -16,7 +16,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 			"password" : password
         };
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/test_pin.php", data).
+        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/create_user.php", data).
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
@@ -38,7 +38,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "password" : password
         }
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/login2.php", data).
+        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/login.php", data).
             success(function(data, status){
                 console.log("Success!");
                 console.log(data);

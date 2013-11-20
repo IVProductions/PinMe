@@ -18,6 +18,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.user = stateService.functions.getCurrentUser();
     $scope.markimageurl = "Content/img/basket.png";
     $scope.imgdata = "";
+    $scope.radius = stateService.functions.getRadius();
+
 
     angular.extend($scope, {
         dragging: false,
@@ -32,6 +34,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             scrollWheelZoom: false
         }
     });
+
 
     $scope.$on('leafletDirectiveMarker.click', function(e, args) {
         // Args will contain the marker name and other relevant information
@@ -179,6 +182,10 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         else {
             $("#markcategory").css("background-color","rgb(176,176,176)");
         }
+    };
+
+    $scope.update = function(){
+        $scope.markers = stateService.functions.getAllMarkers();
     };
 
     $scope.capturePhoto = function() {

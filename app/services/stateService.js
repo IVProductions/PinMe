@@ -2,7 +2,7 @@ PinMe.factory("stateService", function ($http) {
     var latitude = 34.415;
     var longitude = -119.85;
 
-    var radius = 600;
+    var radius = 10;
 
     var currentUser = "";
     var markers = {};
@@ -47,6 +47,7 @@ PinMe.factory("stateService", function ($http) {
             lat: latitude,
             lng: longitude,
             focus: false,
+            name: "me",
             draggable: false,
             clickable: false,
             icon: L.icon({
@@ -64,10 +65,9 @@ PinMe.factory("stateService", function ($http) {
 
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
             success(function(data, status){
-                alert(data);
+                //alert(data);
                 var json = JSON.parse(JSON.stringify(eval(data)));
-                alert(json.locations[0].distance);
-
+                //alert(json.locations[0].distance);
                 var num_of_locations = json.locations.length;
 
                 for (var i = 0; i < num_of_locations; i++){
@@ -75,11 +75,11 @@ PinMe.factory("stateService", function ($http) {
                     var category = json.locations[i].category;
                     var lat = json.locations[i].lat;
                     var lng = json.locations[i].lng;
-                    var distance = json.locations[i].distance;
                     var markerName = json.locations[i].markerName;
                     var description = json.locations[i].description;
                     var imglink = json.locations[i].image_link;
                     var username = json.locations[i].username;
+                    var distance = json.locations[i].distance;
                     var pincolor = "greypin.png";
 
                     if(category == "Recreational"){
@@ -112,6 +112,7 @@ PinMe.factory("stateService", function ($http) {
                         category: category,
                         username: username,
                         imglink: imglink,
+                        distance: distance,
                         icon: L.icon({
                             iconUrl: 'Content/img/' + pincolor,
                             iconSize: [38,55],
@@ -124,9 +125,8 @@ PinMe.factory("stateService", function ($http) {
                 console.log("Error");
                 console.log(data || "No data returned." );
                 console.log(status);
-                alert(data);
+                //alert(data);
             });
-
         return markers;
     };
 

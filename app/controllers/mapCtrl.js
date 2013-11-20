@@ -260,17 +260,37 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             }).
             error(function(data, status){
                 setTimeout(function() {
-                    alert("Failed to Save Image");
+                    alert("Failed to Save Image.");
                 }, 0);
             });
     }
 
     function onFail(message) {
-        alert('Failed because: ' + message);
+        alert("Camera Error!");
     }
 
      $scope.redirect = function(path) {
          $location.path(path);
      }
+
+    $scope.start_geolocation_timeout = function() {
+        setInterval(function(){
+            navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        },40000);
+    }
+
+    function onSuccess (position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+        stateService.functions.setLatitude(latitude);
+        stateService.functions.setLongitude(longitude);
+
+    }
+
+    function onError(error) {
+        alert("Failed to Get Your Current Location.");
+    }
+
+    $scope.start_geolocation_timeout();
 }
 

@@ -135,7 +135,9 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
             success(function(data, status){
                 console.log("Success!");
                 alert(data);
-                $scope.markers = stateService.functions.getAllMarkers();
+                $scope.redirect("/login");
+                //$scope.markers = stateService.functions.getAllMarkers();
+
             }).
             error(function(data, status){
                 console.log("Error");
@@ -343,7 +345,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
      $scope.redirect = function(path) {
          $location.path(path);
-     }
+     };
 
     $scope.start_geolocation_timeout = function() {
         setInterval(function(){

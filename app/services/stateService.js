@@ -66,6 +66,7 @@ PinMe.factory("stateService", function ($http) {
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
             success(function(data, status){
                 //alert("updated!");
+                //alert(data);
                 var json = JSON.parse(JSON.stringify(eval(data)));
                 //alert(json.locations[0].distance);
                 var num_of_locations = json.locations.length;

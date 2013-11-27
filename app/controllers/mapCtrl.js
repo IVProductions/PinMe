@@ -134,8 +134,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/add_marker.php", data).
             success(function(data, status){
                 console.log("Success!");
-                alert(data);
-                $scope.redirect("/login");
+                //alert(data);
+                $route.reload();
                 //$scope.markers = stateService.functions.getAllMarkers();
 
             }).

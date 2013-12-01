@@ -11,6 +11,10 @@ PinMe.config(function ($routeProvider){
         templateUrl:"app/partials/newuser.html",
         controller:"loginCtrl"
     })
+    .when("/map", {
+        templateUrl:"app/partials/map.html",
+        controller:"mapCtrl"
+    })
     .when("/login", {
         templateUrl:"app/partials/map.html",
         controller:"mapCtrl"

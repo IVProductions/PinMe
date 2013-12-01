@@ -2,12 +2,14 @@ PinMe.factory("stateService", function ($http) {
     var latitude = 34.415;
     var longitude = -119.85;
 
-    var radius = 10;
+    var radius = 1000;
 
     var currentUser = "";
     var markers = {};
     var lastMarker = {};
     var functions = {};
+
+    var route = "/map";
 
     functions.getLatitude = function(){
         return latitude;
@@ -39,6 +41,14 @@ PinMe.factory("stateService", function ($http) {
 
     functions.setRadius = function(rad){
         radius = rad;
+    };
+
+    functions.getRoute = function(){
+        return route;
+    };
+
+    functions.setRoute = function(rt){
+        route = rt;
     };
 
     functions.getAllMarkers = function(){

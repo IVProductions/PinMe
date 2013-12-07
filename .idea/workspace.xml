@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/loginCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ShareThis.iws" />
@@ -26,15 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="56" selection-start="147" selection-end="147" vertical-scroll-proportion="0.075630255" vertical-offset="0" max-vertical-offset="2535">
+            <state line="32" column="89" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2535">
               <folding />
             </state>
           </provider>
@@ -65,7 +57,7 @@
       <file leaf-file-name="loginCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1380">
+            <state line="48" column="78" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
@@ -101,7 +93,16 @@
       <file leaf-file-name="mapCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="232" column="48" selection-start="8254" selection-end="8267" vertical-scroll-proportion="-8.076923" vertical-offset="3270" max-vertical-offset="5580">
+            <state line="323" column="78" selection-start="11288" selection-end="11288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5580">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newUserCtrl.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/newUserCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.022727273" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -146,17 +147,17 @@
         <option value="$PROJECT_DIR$/app/services/markerFactory.js" />
         <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/app/partials/newuser.html" />
-        <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
-        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
         <option value="$PROJECT_DIR$/Content/css/style.css" />
         <option value="$PROJECT_DIR$/app/partials/map.html" />
+        <option value="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
+        <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="804" />
+    <option name="height" value="806" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -200,7 +201,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -353,6 +353,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +441,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="804" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="806" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -508,11 +509,6 @@
         <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/newUserCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="8" selection-start="3854" selection-end="3854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -548,23 +544,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1380">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/newuser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="14" selection-start="338" selection-end="338" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
@@ -576,16 +558,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="232" column="48" selection-start="8254" selection-end="8267" vertical-scroll-proportion="-8.076923" vertical-offset="3270" max-vertical-offset="5580">
+        <state line="32" column="89" selection-start="1586" selection-end="1586" vertical-scroll-proportion="-0.0" vertical-offset="480" max-vertical-offset="2535">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/map.html">
+    <entry file="file://$PROJECT_DIR$/app/services/markerFactory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="56" selection-start="147" selection-end="147" vertical-scroll-proportion="0.075630255" vertical-offset="0" max-vertical-offset="2535">
+        <state line="17" column="3" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/loginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="78" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="323" column="78" selection-start="11288" selection-end="11288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/newUserCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="30" selection-end="30" vertical-scroll-proportion="0.022727273" vertical-offset="0" max-vertical-offset="660">
           <folding />
         </state>
       </provider>

@@ -122,14 +122,17 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
     };
 
     $scope.updateMap = function(){
-        if(stateService.functions.getRoute() == "/map"){
+        $scope.markers = {};
+        stateService.functions.setRadius($scope.radius);
+        $route.reload();
+       /* if(stateService.functions.getRoute() == "/map"){
             stateService.functions.setRoute("/login");
             $scope.redirect("/map");
         }
         else {
             stateService.functions.setRoute("/map");
             $scope.redirect("/login");
-        }
+        }     */
     };
 
     $scope.addMarker = function() {

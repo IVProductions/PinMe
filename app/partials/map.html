@@ -4,22 +4,27 @@
         <button class="btn btn-danger logout" ng-click="redirect('/')">Log out</button>
     </div>
     <div class="col-xs-12 col-sm-12">
-        <button class="btn btn-primary backtomap" ng-click="updateMap(); $spMenu.toggle();">Back To Map</button>
+        <button class="btn btn-primary backtomap" ng-click="updateMap();">Back To Map</button>
     </div>
+
     <div class="row">
-       <p style="text-align: center;">radius</p>
-    </div>
-    <div class="row">
+        <div class="col-xs-5 col-sm-5 radiustext">
+            <strong>Radius: (km)</strong>
+        </div>
+        <div class="col-xs-6 col-sm-6">
+            <input type="number" ng-model="radius" class="form-control radiusinput"/>
+        </div>
+        <!--
         <div class="col-xs-4 col-sm-4">
             <button class="btn-primary btn minus" ng-click="changeRadius(false);">-</button>
         </div>
         <div class="centerrad col-xs-4 col-sm-4">
             <strong id="radius" style="padding-top: 10px;"> {{ radius }} km </strong>
             <!--<slider model="radius" type="text" class="span2 slider" data-slider-min="5" data-slider-max="30" data-slider-step="1"  data-slider-orientation="horizontal" data-slider-selection="after" data-slider-tooltip="hide"></slider>   -->
-        </div>
+        <!--</div>
         <div class="col-xs-4 col-sm-4">
             <button class="btn-primary btn plus" ng-click="changeRadius(true);">+</button>
-        </div>
+        </div> -->
     </div>
     <div class="row">
         <div class="col-xs-12 col-sm-12">
@@ -124,6 +129,14 @@
             </div>
         </div>
         <button class="btn btn-default img" ng-click="capturePhoto()">Upload Picture</button>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="btn-group btn-group-xs privpub">
+                    <button class="btn btn-default">Private</button>
+                    <button class="btn btn-default">Public</button>
+                </div>
+            </div>
+        </div>
         <button class="btn btn-success save" ng-click="newMark = false; addMarker()">Save</button>
     </div>
 

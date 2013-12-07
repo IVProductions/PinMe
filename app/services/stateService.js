@@ -2,7 +2,7 @@ PinMe.factory("stateService", function ($http) {
     var latitude = 34.415;
     var longitude = -119.85;
 
-    var radius = 1000;
+    var radius = 5;
 
     var currentUser = "";
     var markers = {};
@@ -73,7 +73,7 @@ PinMe.factory("stateService", function ($http) {
             "lng" : longitude
         };
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
+        $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/get_all_markers.php", data).
             success(function(data, status){
                 //alert("updated!");
                 //alert(data);
@@ -82,7 +82,7 @@ PinMe.factory("stateService", function ($http) {
                 var num_of_locations = json.locations.length;
 
                 for (var i = 0; i < num_of_locations; i++){
-
+                    console.log("numOfLoc "+num_of_locations);
                     var category = json.locations[i].category;
                     var lat = json.locations[i].lat;
                     var lng = json.locations[i].lng;

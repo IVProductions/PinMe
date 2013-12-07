@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13829de3-0626-4cdf-b606-9be9856e1179" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/loginCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/loginCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/partials/map.html" afterPath="$PROJECT_DIR$/app/partials/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/mapCtrl.js" afterPath="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services/stateService.js" afterPath="$PROJECT_DIR$/app/services/stateService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Content/css/style.css" afterPath="$PROJECT_DIR$/Content/css/style.css" />
     </list>
     <ignored path="ShareThis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386436132619" ignored="false" />
     <file path="/mapCtrl.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386453325612" ignored="false" />
-    <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386439646616" ignored="false" />
-    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386439545758" ignored="false" />
-    <file path="/stateService.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386443235615" ignored="false" />
+    <file path="/map.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386454151247" ignored="false" />
+    <file path="/style.css" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386454169283" ignored="false" />
+    <file path="/stateService.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1386453735637" ignored="false" />
     <file path="/markerFactory.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384905063151" ignored="false" />
     <file path="/index.html" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384911414913" ignored="false" />
     <file path="/mapDirective.js" changelist="13829de3-0626-4cdf-b606-9be9856e1179" time="1384926562612" ignored="false" />
@@ -39,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Content/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="355" column="23" selection-start="4829" selection-end="4829" vertical-scroll-proportion="-4.8">
+            <state line="356" column="25" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.4818653">
               <folding />
             </state>
           </provider>
@@ -69,7 +67,7 @@
       <file leaf-file-name="stateService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="0" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+            <state line="120" column="20" selection-start="3577" selection-end="3577" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.20100503">
+            <state line="132" column="70" selection-start="5930" selection-end="5930" vertical-scroll-proportion="-14.375">
               <folding />
             </state>
           </provider>
@@ -159,10 +157,10 @@
         <option value="$PROJECT_DIR$/app/partials/login.html" />
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/Content/css/style.css" />
-        <option value="$PROJECT_DIR$/app/partials/map.html" />
-        <option value="$PROJECT_DIR$/app/services/stateService.js" />
         <option value="$PROJECT_DIR$/app/controllers/mapCtrl.js" />
+        <option value="$PROJECT_DIR$/app/services/stateService.js" />
+        <option value="$PROJECT_DIR$/app/partials/map.html" />
+        <option value="$PROJECT_DIR$/Content/css/style.css" />
       </list>
     </option>
   </component>
@@ -666,20 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="355" column="23" selection-start="4829" selection-end="4829" vertical-scroll-proportion="-4.8">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/mapCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="22" selection-start="5004" selection-end="5004" vertical-scroll-proportion="-77.30769">
@@ -687,9 +671,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/stateService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="20" selection-start="3577" selection-end="3577" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.20100503">
+        <state line="132" column="70" selection-start="5930" selection-end="5930" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="356" column="25" selection-start="4854" selection-end="4854" vertical-scroll-proportion="0.4818653">
           <folding />
         </state>
       </provider>

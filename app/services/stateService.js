@@ -8,6 +8,7 @@ PinMe.factory("stateService", function ($http) {
     var markers = {};
     var lastMarker = {};
     var functions = {};
+    var markersLayerGroup = null;
 
     var route = "/map";
 
@@ -66,6 +67,8 @@ PinMe.factory("stateService", function ($http) {
                 iconAnchor: [14,16]
             })
         };
+
+        var listOfMarkers = [];
 
         var data = {
             "radius" : radius,
@@ -130,6 +133,9 @@ PinMe.factory("stateService", function ($http) {
                             iconAnchor: [18,55]
                         })
                     }
+
+                    //listOfMarkers.push(temp);
+
                 }
             }).
             error(function(data, status){
@@ -138,6 +144,7 @@ PinMe.factory("stateService", function ($http) {
                 console.log(status);
                 //alert(data);
             });
+        //markersLayerGroup = L.layerGroup(listOfMarkers);
         return markers;
     };
 

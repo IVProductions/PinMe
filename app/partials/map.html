@@ -4,7 +4,7 @@
         <button class="btn btn-danger logout" ng-click="redirect('/')">Log out</button>
     </div>
     <div class="col-xs-12 col-sm-12">
-        <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle(); update();">Back To Map</button>
+        <button class="btn btn-primary backtomap" ng-click="updateMap(); $spMenu.toggle();">Back To Map</button>
     </div>
     <div class="row">
        <p style="text-align: center;">radius</p>
@@ -78,6 +78,7 @@
 
         ></leaflet>
     </div>
+    <button id="updateBtn" class="btn btn-default" ng-click="updateMap()"></button>
     <div id="header">
         <h2 id="title"><strong class="pin">Pin</strong><strong class="it">it</strong></h2>
         <button class="btn btn-default" ng-show="!mark" ng-click="$spMenu.toggle()">Menu</button>

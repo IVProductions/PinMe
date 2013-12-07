@@ -1,4 +1,4 @@
-function mapCtrl($scope, $http, stateService, markerFactory, $location){
+function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFactory, $location, $route){
     $("#map").css({'height': window.innerHeight});
 
     var lat = stateService.functions.getLatitude();
@@ -12,6 +12,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.newMark = false;
     $scope.mark = false;
 
+    $scope.path = "/map";
+
     $scope.category = "Choose a category";
     $scope.name = "";
     $scope.description = "";
@@ -20,7 +22,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     $scope.imgdata = "";
     $scope.radius = stateService.functions.getRadius();
 
-
+    $scope.markers = {};
     angular.extend($scope, {
         dragging: false,
         center: {
@@ -119,6 +121,17 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         mark = true;
     };
 
+    $scope.updateMap = function(){
+        if(stateService.functions.getRoute() == "/map"){
+            stateService.functions.setRoute("/login");
+            $scope.redirect("/map");
+        }
+        else {
+            stateService.functions.setRoute("/map");
+            $scope.redirect("/login");
+        }
+    };
+
     $scope.addMarker = function() {
         // send data to server
         var data = {
@@ -134,8 +147,10 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
         $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/add_marker.php", data).
             success(function(data, status){
                 console.log("Success!");
-                alert(data);
-                $scope.markers = stateService.functions.getAllMarkers();
+                //alert(data);
+                $scope.updateMap();
+                //$scope.markers = stateService.functions.getAllMarkers();
+
             }).
             error(function(data, status){
                 console.log("Error");
@@ -143,24 +158,6 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
                 console.log(status);
                 alert(data);
             });
-
-        /*
-
-        $scope.markers['marker0001'] = {
-            lat: lat,
-            lng: lng,
-            name: $scope.name,
-            description: $scope.description,
-            category: $scope.category,
-            user: user,
-            icon: L.icon({
-                iconUrl: 'Content/img/' + $scope.pincolor,
-                iconSize: [38,55],
-                iconAnchor: [18,55]
-            }),
-            focus: true,
-            draggable: false
-        }; */
     };
 
     $scope.closeMark = function() {
@@ -169,7 +166,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
 
         $scope.name = "";
-        $scope.category = "";
+        $scope.category = "Choose a category";
         $scope.description = "";
         $scope.user = "";
         $scope.imglink = "";
@@ -279,6 +276,8 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
     };
 
     $scope.update = function(){
+        $scope.category = "Choose a category";
+        $scope.setCategoryColor($scope.category);
         $scope.markers = stateService.functions.getAllMarkers();
     };
 
@@ -341,7 +340,7 @@ function mapCtrl($scope, $http, stateService, markerFactory, $location){
 
      $scope.redirect = function(path) {
          $location.path(path);
-     }
+     };
 
     $scope.start_geolocation_timeout = function() {
         setInterval(function(){

@@ -2,12 +2,14 @@ PinMe.factory("stateService", function ($http) {
     var latitude = 34.415;
     var longitude = -119.85;
 
-    var radius = 10;
+    var radius = 1000;
 
     var currentUser = "";
     var markers = {};
     var lastMarker = {};
     var functions = {};
+
+    var route = "/map";
 
     functions.getLatitude = function(){
         return latitude;
@@ -41,6 +43,14 @@ PinMe.factory("stateService", function ($http) {
         radius = rad;
     };
 
+    functions.getRoute = function(){
+        return route;
+    };
+
+    functions.setRoute = function(rt){
+        route = rt;
+    };
+
     functions.getAllMarkers = function(){
              console.log("yolo");
         markers['me'] = {
@@ -65,6 +75,7 @@ PinMe.factory("stateService", function ($http) {
 
         $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_all_markers.php", data).
             success(function(data, status){
+                //alert("updated!");
                 //alert(data);
                 var json = JSON.parse(JSON.stringify(eval(data)));
                 //alert(json.locations[0].distance);

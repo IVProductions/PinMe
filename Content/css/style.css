@@ -330,6 +330,18 @@ body {
     right: 20px;
 }
 
+#updateBtn {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 10px;
+    top: 130px;
+    background-image: url("../img/update.png")!important;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .exit {
     position: absolute;
     right: 10px;

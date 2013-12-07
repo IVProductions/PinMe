@@ -17,7 +17,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
 			    "password" : password
             };
 
-            $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/create_user.php", data).
+            $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/create_user.php", data).
                 success(function(data, status){
                     console.log("Success!");
                     if (data == "Yes") {
@@ -46,7 +46,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
             "password" : password
         }
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/login.php", data).
+        $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/login.php", data).
             success(function(data, status){
                 console.log("Success!");
                 console.log(data);

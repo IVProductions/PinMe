@@ -144,7 +144,7 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
             "imgdata" : $scope.imgdata
         };
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/add_marker.php", data).
+        $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/add_marker.php", data).
             success(function(data, status){
                 console.log("Success!");
                 //alert(data);
@@ -298,7 +298,7 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
             "username" : username
         }
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/get_image.php", data).
+        $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/get_image.php", data).
             success(function(data, status){
                 console.log("Fagg" + data);
                 var smallImage = document.getElementById('smallImage');
@@ -320,7 +320,7 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
             "imageData" : imageData
         }
 
-        $http.post("http://ec2-54-227-8-199.compute-1.amazonaws.com/save_image.php", data).
+        $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/save_image.php", data).
             success(function(data, status){
                 setTimeout(function() {
                     alert(data);

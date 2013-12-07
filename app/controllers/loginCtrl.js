@@ -1,4 +1,4 @@
-function loginCtrl($scope, $location, $resource, $http, stateService){
+function loginCtrl($scope, $location, $resource, $http, stateService, $route){
 
     $scope.redirect = function(path) {
         $location.path(path);
@@ -23,11 +23,12 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
                     if (data == "Yes") {
                         alert("User Created!");
                         stateService.functions.setCurrentUser(username);
-                        $scope.redirect('login');
+                        $scope.redirect('map');
                     }
                     else {
+                        //$scope.redirect('newuser');
+                        $route.reload();
                         alert("Username Already Taken");
-                        $scope.redirect('/newuser');
                     }
                 }).
                 error(function(data, status){
@@ -52,7 +53,7 @@ function loginCtrl($scope, $location, $resource, $http, stateService){
                 console.log(data);
                 stateService.functions.setCurrentUser(username);
                 if (data == true) {
-                    $scope.redirect('login');
+                    $scope.redirect('map');
                 }
                 else {
                     $scope.redirect('/');

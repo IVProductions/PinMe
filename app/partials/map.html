@@ -4,9 +4,8 @@
         <button class="btn btn-danger logout" ng-click="redirect('/')">Log out</button>
     </div>
     <div class="col-xs-12 col-sm-12">
-        <button class="btn btn-primary backtomap" ng-click="updateMap();">Back To Map</button>
+        <button class="btn btn-primary backtomap" ng-click="$spMenu.toggle(); updateMap();">Back To Map</button>
     </div>
-
     <div class="row">
         <div class="col-xs-5 col-sm-5 radiustext">
             <strong>Radius: (km)</strong>

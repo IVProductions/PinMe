@@ -122,17 +122,19 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
     };
 
     $scope.updateMap = function(){
-        $scope.markers = {};
         stateService.functions.setRadius($scope.radius);
         $route.reload();
-       /* if(stateService.functions.getRoute() == "/map"){
-            stateService.functions.setRoute("/login");
-            $scope.redirect("/map");
-        }
-        else {
-            stateService.functions.setRoute("/map");
-            $scope.redirect("/login");
-        }     */
+        console.log("radius: "+stateService.functions.getRadius());
+        //if(stateService.functions.getRoute() == "/map"){
+            //stateService.functions.setRoute("/login");
+            //$scope.redirect("/map");
+
+
+        //}
+        //else {
+        //    stateService.functions.setRoute("/map");
+        //    $scope.redirect("/login");
+        //}
     };
 
     $scope.addMarker = function() {
@@ -183,7 +185,7 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
             stateService.functions.setRadius($scope.radius);
         }
         else {
-            if($scope.radius != 5){
+            if($scope.radius > 5){
                 $scope.radius -= 5;
                 stateService.functions.setRadius($scope.radius);
             }
@@ -296,11 +298,9 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
 
 
     $scope.getImage = function(username) {
-
         var data = {
             "username" : username
         }
-
         $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/get_image.php", data).
             success(function(data, status){
                 console.log("Fagg" + data);
@@ -317,12 +317,9 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
     }
 
     $scope.saveImage = function(imageData) {
-
-
         var data = {
             "imageData" : imageData
         }
-
         $http.post("http://MovieShareLB-1279660590.us-east-1.elb.amazonaws.com/save_image.php", data).
             success(function(data, status){
                 setTimeout(function() {
@@ -352,10 +349,8 @@ function mapCtrl($scope, $rootScope, $routeParams, $http, stateService, markerFa
     }
 
     function onSuccess (position) {
-        var latitude = position.coords.latitude;
-        var longitude = position.coords.longitude;
-        stateService.functions.setLatitude(latitude);
-        stateService.functions.setLongitude(longitude);
+        stateService.functions.setLatitude(position.coords.latitude);
+        stateService.functions.setLongitude(position.coords.longitude);
 
     }
 
